@@ -5,7 +5,7 @@ public struct CurrentForecastWeatherResponse: Codable {
     let coord: Coord?
     let weather: [Weather]?
     let base: String?
-    let main: Main?
+  public let main: Main?
     let visibility: Int?
     let wind: Wind?
     let clouds: Clouds?

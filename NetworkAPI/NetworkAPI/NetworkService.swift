@@ -14,8 +14,8 @@ public class NetworkService: ServiceProtocol {
     public init() {}
 
     public func requestCurrentForecastWeather(lat: CLLocationDegrees, lon: CLLocationDegrees, success: @escaping (CurrentForecastWeatherResponse) -> Void, failure: @escaping (Error?) -> Void) {
-        let url = "\(Service.baseUrl)/weather?lat=\(lat)&lon=\(lon)&appid=8ddadecc7ae4f56fee73b2b405a63659&units=metric"
         
+        let url = "\(Service.baseUrl)/weather?lat=\(lat)&lon=\(lon)&appid=8ddadecc7ae4f56fee73b2b405a63659&units=metric"
         let params: [String:String] = [
             "lat": "\"(lat)",
             "lon": "\(lon)",

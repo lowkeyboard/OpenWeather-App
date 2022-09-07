@@ -21,10 +21,12 @@ class NetworkAPITests: XCTestCase {
     }
 
     func testDailyForecastRequest() throws {
-        dummyService.requestDailyForecastWeather(lat: 51.50998, lon: 0.1337) { response in
-            XCTAssertTrue(true, "\(response)")
+        dummyService.requestCurrentForecastWeather(lat: 51.50998, lon: 0.1337) { response in
+            guard let responseData = response.main?.temp else { return }
+            
+            XCTAssertEqual(responseData, 4)
+            
         } failure: { err in
-            print(err)
             XCTAssertFalse(false)
         }
 
