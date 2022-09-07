@@ -30,7 +30,7 @@
 		374E73FAB3EA2A0E16CA0497AFEA30DF /* Alamofire-framework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A12170DC0B1E1DFCFFA2AC29339CAB88 /* Alamofire-framework-dummy.m */; };
 		38C1A71086312C112D265828EEA0D273 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F10C10688DB0EE90FCAD4053565E8E /* StringEncoding+Alamofire.swift */; };
 		3A050DB55772D424D568C6C20C10B325 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D50CA81A7A9941863A4CBD58D3BCBC /* URLRequest+Alamofire.swift */; };
-		3F8C44BB1102430F0BD27C08850851FF /* Pods-WeatherApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D3ADEE6352BB7E8458C4028AFE2EE3 /* Pods-WeatherApp-dummy.m */; };
+		3F8C44BB1102430F0BD27C08850851FF /* Pods-WeatherApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F33061732CBB6C96C677F11FCC0D420 /* Pods-WeatherApp-dummy.m */; };
 		409170DB97B1E5E436020C4D25F1D0FB /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F74B78F2FA4DC800D9E308D21306BF /* OperationQueue+Alamofire.swift */; };
 		44B704F9AFF3B545157591542DAC03D9 /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB2F4783C9214E7911AB1C8D7D7E74D /* AuthenticationInterceptor.swift */; };
 		4632EB142477C1FC03808736E211DE89 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C2E2D213B94B127A90A8FB7AF77446 /* Notifications.swift */; };
@@ -41,16 +41,17 @@
 		565A40A42D9615040915D1ADE54D3238 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042FCF17F6E44250BD9F4968E9DA01BA /* Combine.swift */; };
 		5C344681CF9EC4A00A39AD4451C0C89C /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9399B5E2E113D44C4E5B1F3F95F89986 /* URLEncodedFormEncoder.swift */; };
 		5E51F6320A5DCFA5E48DF75E7A2E4337 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AE63C5A1AB36E1DA95A8E03F3A2738 /* Image.swift */; };
+		6046EDAEAB08309812F57CE54A3F037A /* Pods-NetworkAPI-NetworkAPITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A420D46C5A3F12DB74A00BEA56D769C9 /* Pods-NetworkAPI-NetworkAPITests-dummy.m */; };
 		608F57E7623FCAE5ED8738B0AD2CABFC /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAF7FCFE1C2BC7000805177F333A682 /* MultipartUpload.swift */; };
 		63C4D200DB3EF0321D6F904ED794B582 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D77DA9A99D94C6839A5B524A30A7E2 /* ParameterEncoder.swift */; };
 		6F039B77730C25BA9660B74ECF4C4462 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585943349ABF41860813006F1F6972DE /* Result+Alamofire.swift */; };
 		7D514E363E07C99F8857B7859BCBAC37 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DBC7151079D8482F71C3C8CC8A64B7 /* Alamofire.swift */; };
-		7D58F39A5A7458426161660584E09F62 /* Pods-NetworkAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A1AFADC663C5614D054B9DA3B22FF9 /* Pods-NetworkAPI-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7D58F39A5A7458426161660584E09F62 /* Pods-NetworkAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 090A1A9A09386D524E56EEB638BFD119 /* Pods-NetworkAPI-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7DBF8CC34130BDB7747C62B8F7735204 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3628EEBCA187A57AC9C78CC2D9870F /* AlamofireExtended.swift */; };
 		7E1C6CACEFBB5AE002361E610FA8ED6B /* Request+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CFFF66562BEE315AA8CE7A28CE35D /* Request+AlamofireImage.swift */; };
 		831FDF06671BE54D4B20EC82339DD32F /* UIButton+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A06B31A8A3C49B6E40B85BD2AAA9E /* UIButton+AlamofireImage.swift */; };
 		8661AEF750AECDB9E63EF1B2BEE7F9ED /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7C0B67E3EC2860156BD0619D8DEAAD /* ImageDownloader.swift */; };
-		8786B5621953DF1840B1F313DE18E98F /* Pods-NetworkAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0242F83F004B5B0C95221512041DB76 /* Pods-NetworkAPI-dummy.m */; };
+		8786B5621953DF1840B1F313DE18E98F /* Pods-NetworkAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB9389BD57C14F733E2945410DCAD32 /* Pods-NetworkAPI-dummy.m */; };
 		8B21A7E336F3FD0F612097E971D78463 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A740C83B5FA5EF3F2D9F8212A1F19 /* Protected.swift */; };
 		8D1981955E0A89B329BEB23523BA98A3 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9592FE41A079FF2E3129DE7F1390C93B /* RequestTaskMap.swift */; };
 		8DCC32970B7CD3C35AE31C56F292E045 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B68D97D5B9244AED33E40F57D1B4D2 /* Validation.swift */; };
@@ -69,12 +70,13 @@
 		A75A961FA07DBB793DD58B844E4117AB /* UIButton+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841A06B31A8A3C49B6E40B85BD2AAA9E /* UIButton+AlamofireImage.swift */; };
 		A7FE743089BF2F8FCE6A7C65D630DF22 /* AFIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D5E07A043F6AD77DC7058D1BE0D00 /* AFIError.swift */; };
 		A8B27B50A9C64E2B503BC7AC76CADCAF /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9399B5E2E113D44C4E5B1F3F95F89986 /* URLEncodedFormEncoder.swift */; };
+		A902B8D59F0455FA55F021883CB11CCE /* Pods-NetworkAPI-NetworkAPITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA91F2CBDFB49AFACB36451BE0981F6E /* Pods-NetworkAPI-NetworkAPITests-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		ACB0A641A92A6B2FB9C8736E14BDAB13 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9747F3043CC99A198C1913162B3FEDDD /* EventMonitor.swift */; };
 		AFC8A28409776C186E70D69C1382372C /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574B54F1782B6C19CA9A432A6B3187A4 /* URLSessionConfiguration+Alamofire.swift */; };
 		B008DE560889F33DE17EFED73529C04D /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA533C69C1014066DBB82A2DE37C9462 /* DispatchQueue+Alamofire.swift */; };
 		BCCF593388D78A0EE5391B4A927739F3 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539E6E908F57DF932D20E77967797C4F /* MultipartFormData.swift */; };
 		BE225D77E64EE10EFCB6FDA2502896B0 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B9F13B842065643EEE687C2A1380F /* Session.swift */; };
-		BE4E3CF88E3AFCF94902A4AFAF483045 /* Pods-WeatherApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7F2BA99916E18FCE68986F3109541C9 /* Pods-WeatherApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE4E3CF88E3AFCF94902A4AFAF483045 /* Pods-WeatherApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2C73F87BBF307FB6698612C3465ACF /* Pods-WeatherApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFE4B1F00C0D3D5E4BA5B41E4F918609 /* ImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608B87786B62245BA99A27197F9F1CC6 /* ImageFilter.swift */; };
 		C07F1D87C54DF0CAC2C3C3E6B0B387C6 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9747F3043CC99A198C1913162B3FEDDD /* EventMonitor.swift */; };
 		C08A2898FC89037EFAFAACBE4C66BF06 /* Request+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CFFF66562BEE315AA8CE7A28CE35D /* Request+AlamofireImage.swift */; };
@@ -137,6 +139,13 @@
 			remoteGlobalIDString = 3DF15621FF7205479640D30C28A433E4;
 			remoteInfo = "AlamofireImage-framework";
 		};
+		B1636967A7A1E5C6CC5AF0F58A1273CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C501D6444CB010CDEB100974375D4EDE;
+			remoteInfo = "AlamofireImage-library";
+		};
 		C5A081D84D9EF92E8409E2BC7BA188E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -158,18 +167,25 @@
 			remoteGlobalIDString = 3949679AB5CF3F2C77C15A0E67E8AF64;
 			remoteInfo = "Alamofire-framework";
 		};
+		F9F1702D597457C5F06F46389059E94F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47497BE8AA365DA8AAEFDEEEC086ABF6;
+			remoteInfo = "Alamofire-library";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0001DD70347FD0B570DD2A875CE160EF /* AlamofireImage-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "AlamofireImage-library.release.xcconfig"; path = "../AlamofireImage-library/AlamofireImage-library.release.xcconfig"; sourceTree = "<group>"; };
 		02694D62DB67EE688E23077CAF10A9E3 /* AlamofireImage-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "AlamofireImage-library.debug.xcconfig"; path = "../AlamofireImage-library/AlamofireImage-library.debug.xcconfig"; sourceTree = "<group>"; };
 		0277B76E1D8235B855680CE8FDA61AE9 /* AlamofireImage-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "AlamofireImage-framework.modulemap"; sourceTree = "<group>"; };
-		03516118407AB8EB27AB46DF31C5C307 /* Pods-WeatherApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeatherApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		042FCF17F6E44250BD9F4968E9DA01BA /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
+		090A1A9A09386D524E56EEB638BFD119 /* Pods-NetworkAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NetworkAPI-umbrella.h"; sourceTree = "<group>"; };
 		0C1A740C83B5FA5EF3F2D9F8212A1F19 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
 		0D05A548AF71099A4B142AE20BEF79D6 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
+		106088315C5977B8B0D560C37162023B /* Pods-WeatherApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherApp-frameworks.sh"; sourceTree = "<group>"; };
 		108273D22AC9C5EAC6F7D8AD1787567C /* AlamofireImage-framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "AlamofireImage-framework"; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11AD637FD861DAE148D225CA70282715 /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		182B9F13B842065643EEE687C2A1380F /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
 		1A8D5E07A043F6AD77DC7058D1BE0D00 /* AFIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFIError.swift; path = Source/AFIError.swift; sourceTree = "<group>"; };
 		1CB2F4783C9214E7911AB1C8D7D7E74D /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
@@ -177,19 +193,22 @@
 		28B68D97D5B9244AED33E40F57D1B4D2 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		2D538FA21A1ED949C2E23B5E881CD48D /* Alamofire-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Alamofire-library-dummy.m"; path = "../Alamofire-library/Alamofire-library-dummy.m"; sourceTree = "<group>"; };
 		2DD02583590E654FB5CE8A72438E85C8 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		2ED927666488F711692F2EB315EC02D9 /* Pods-NetworkAPI-NetworkAPITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NetworkAPI-NetworkAPITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3076B2AB289B08CBBB59B00A77261823 /* Alamofire-library */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Alamofire-library"; path = "libAlamofire-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F74B78F2FA4DC800D9E308D21306BF /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		32BD87FAECC9DF7BA3A8149B6E31F021 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
-		32D3ADEE6352BB7E8458C4028AFE2EE3 /* Pods-WeatherApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeatherApp-dummy.m"; sourceTree = "<group>"; };
 		343CE98738FF456D1F5E2995AC819CEE /* Alamofire-framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Alamofire-framework"; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DFA1864493E06D351827956E7EA943 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
-		3D787B317267062CFC3237EF8F738002 /* Pods-NetworkAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NetworkAPI.modulemap"; sourceTree = "<group>"; };
+		3AE13D97E748C3508ED0E49FCBB1855F /* Pods-NetworkAPI-NetworkAPITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NetworkAPI-NetworkAPITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3F8EB9139C4F0C0C8F7CDB7E6CA5EA70 /* AlamofireImage-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireImage-framework-dummy.m"; sourceTree = "<group>"; };
 		402F7F6CFF27151B7A6ED5FCB38D6359 /* Alamofire-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Alamofire-library.debug.xcconfig"; path = "../Alamofire-library/Alamofire-library.debug.xcconfig"; sourceTree = "<group>"; };
 		40DD8903C7DD25F23BBA1BABE55C413D /* AlamofireImage-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AlamofireImage-library-prefix.pch"; path = "../AlamofireImage-library/AlamofireImage-library-prefix.pch"; sourceTree = "<group>"; };
+		4390EA5239CF1A992F05EBB086640F3D /* Pods-NetworkAPI-NetworkAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetworkAPI-NetworkAPITests.debug.xcconfig"; sourceTree = "<group>"; };
 		450E9CE5AA7BE2C99EA03188D3B59AC6 /* Pods-NetworkAPI */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-NetworkAPI"; path = "libPods-NetworkAPI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C2B846649A4D590D65C6030A9FFD79 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		473295A95F52BE1962AE20F308CC1D41 /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		4DAF7FCFE1C2BC7000805177F333A682 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		4F33061732CBB6C96C677F11FCC0D420 /* Pods-WeatherApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeatherApp-dummy.m"; sourceTree = "<group>"; };
 		4FC880EB2AC80CC52F8A3B52CCEEEF4C /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
 		5163207A4C5441588D6768F9543C2BCC /* Pods-WeatherApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WeatherApp"; path = Pods_WeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52431D9ACCCE2D4DBAB8464B122E35F9 /* AlamofireImage-library */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "AlamofireImage-library"; path = "libAlamofireImage-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,40 +217,45 @@
 		574B54F1782B6C19CA9A432A6B3187A4 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
 		57D77DA9A99D94C6839A5B524A30A7E2 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
 		585943349ABF41860813006F1F6972DE /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
-		5A6D7E29D5B070D3915673F06C31902A /* Pods-WeatherApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeatherApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		5AF31C4235972911AE95B883154B2F0F /* Pods-NetworkAPI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NetworkAPI-acknowledgements.plist"; sourceTree = "<group>"; };
+		5E78F6F26CEFA413C655F0F3CD728DC4 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		5E7EFF12311AAF1484C5BB44B0F8EFD8 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		608B87786B62245BA99A27197F9F1CC6 /* ImageFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFilter.swift; path = Source/ImageFilter.swift; sourceTree = "<group>"; };
 		63274C24A121C1A05A729A5547C6FCDE /* AlamofireImage-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AlamofireImage-library-dummy.m"; path = "../AlamofireImage-library/AlamofireImage-library-dummy.m"; sourceTree = "<group>"; };
 		63F10C10688DB0EE90FCAD4053565E8E /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
 		66C2E2D213B94B127A90A8FB7AF77446 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		6B4B609A156C86D4D848FBE2503208EE /* Pods-NetworkAPI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NetworkAPI-acknowledgements.plist"; sourceTree = "<group>"; };
 		6D7C0B67E3EC2860156BD0619D8DEAAD /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Source/ImageDownloader.swift; sourceTree = "<group>"; };
 		6F3628EEBCA187A57AC9C78CC2D9870F /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
+		7348DED2DFF2B9A2AF70DCCBD87ED014 /* Pods-NetworkAPI-NetworkAPITests */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-NetworkAPI-NetworkAPITests"; path = "libPods-NetworkAPI-NetworkAPITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73CA5B7DF6CFB7D359701981895EC336 /* Alamofire-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Alamofire-framework.release.xcconfig"; sourceTree = "<group>"; };
 		75C054C49353A88565096902CE8E342C /* AlamofireImage-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AlamofireImage-framework.release.xcconfig"; sourceTree = "<group>"; };
+		7CB9389BD57C14F733E2945410DCAD32 /* Pods-NetworkAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NetworkAPI-dummy.m"; sourceTree = "<group>"; };
 		7E3B1AB9B4E46820AC7E9DA589A6C641 /* Alamofire-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Alamofire-library.release.xcconfig"; path = "../Alamofire-library/Alamofire-library.release.xcconfig"; sourceTree = "<group>"; };
 		833975A878C75385C5219F884B2BDAC9 /* Concurrency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Concurrency.swift; path = Source/Concurrency.swift; sourceTree = "<group>"; };
 		841A06B31A8A3C49B6E40B85BD2AAA9E /* UIButton+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+AlamofireImage.swift"; path = "Source/UIButton+AlamofireImage.swift"; sourceTree = "<group>"; };
 		843CFFF66562BEE315AA8CE7A28CE35D /* Request+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Request+AlamofireImage.swift"; path = "Source/Request+AlamofireImage.swift"; sourceTree = "<group>"; };
 		87D801E39398CDB924A1EE39BC7BDFF9 /* AlamofireImage-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AlamofireImage-library-umbrella.h"; path = "../AlamofireImage-library/AlamofireImage-library-umbrella.h"; sourceTree = "<group>"; };
+		8AA3C0FFF5E43A9D4E23510B3F5D3C3E /* Pods-NetworkAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetworkAPI.release.xcconfig"; sourceTree = "<group>"; };
 		8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		8DEB231C72952A579329651414C9C132 /* Pods-WeatherApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeatherApp-frameworks.sh"; sourceTree = "<group>"; };
+		8F747C87E8220EAA17AF3701AB4B7461 /* Pods-WeatherApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeatherApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		91EF9D6C540C6334DFFDBB9DDCF13C67 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		92DBC7151079D8482F71C3C8CC8A64B7 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		9399B5E2E113D44C4E5B1F3F95F89986 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		9592FE41A079FF2E3129DE7F1390C93B /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
 		95ADB749E0D6CDD9966BB74076A93B96 /* AlamofireImage-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "AlamofireImage-library.modulemap"; path = "../AlamofireImage-library/AlamofireImage-library.modulemap"; sourceTree = "<group>"; };
 		9747F3043CC99A198C1913162B3FEDDD /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
-		99652D1611DD80B857A0553198A23E54 /* Pods-NetworkAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetworkAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		9B109157E75721F2879464CF19892152 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F920C25D63B240BA7567327266F530C /* Alamofire-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-library-umbrella.h"; path = "../Alamofire-library/Alamofire-library-umbrella.h"; sourceTree = "<group>"; };
 		A12170DC0B1E1DFCFFA2AC29339CAB88 /* Alamofire-framework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-framework-dummy.m"; sourceTree = "<group>"; };
-		A1FD0214068653797AC3B725545DECEB /* Pods-WeatherApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WeatherApp.modulemap"; sourceTree = "<group>"; };
-		AE0BA672D004E5356E0D293C33F6D2E5 /* Pods-WeatherApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeatherApp-Info.plist"; sourceTree = "<group>"; };
-		B0242F83F004B5B0C95221512041DB76 /* Pods-NetworkAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NetworkAPI-dummy.m"; sourceTree = "<group>"; };
+		A420D46C5A3F12DB74A00BEA56D769C9 /* Pods-NetworkAPI-NetworkAPITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NetworkAPI-NetworkAPITests-dummy.m"; sourceTree = "<group>"; };
+		A45585C6B77C42430161E9A1B25764AE /* Pods-NetworkAPI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NetworkAPI-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A91629C2FC8BD50866EBCE92A5F768E0 /* Pods-NetworkAPI-NetworkAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetworkAPI-NetworkAPITests.release.xcconfig"; sourceTree = "<group>"; };
+		AA2C73F87BBF307FB6698612C3465ACF /* Pods-WeatherApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeatherApp-umbrella.h"; sourceTree = "<group>"; };
 		B7796CDC812BC746674E32C5A0D9C4C5 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		B8A45F136E7AC038A26351BADA7609A2 /* Pods-NetworkAPI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NetworkAPI-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B7ACEF3D0791D0AF1504B88D0EBF5624 /* Pods-NetworkAPI-NetworkAPITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NetworkAPI-NetworkAPITests.modulemap"; sourceTree = "<group>"; };
+		B8BD815794295F0CB9DD20C85A49CE93 /* Pods-NetworkAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NetworkAPI.modulemap"; sourceTree = "<group>"; };
+		B98E85342B9B9B4C3B501D3F14C1BB6A /* Pods-WeatherApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WeatherApp.modulemap"; sourceTree = "<group>"; };
 		BB8A5E50361116230C96A592E705AE38 /* AlamofireImage-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-framework-umbrella.h"; sourceTree = "<group>"; };
 		BFC7668DF8BF344943BFE032BAFA8A70 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
 		C002E9D0D8BDFECC57F5969190CECCA5 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
@@ -239,24 +263,24 @@
 		CA42257D85C1791BF028133688846756 /* AlamofireImage-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-framework-prefix.pch"; sourceTree = "<group>"; };
 		CFCADB470AA0000FA15B235E86F10D42 /* Alamofire-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Alamofire-framework.debug.xcconfig"; sourceTree = "<group>"; };
 		CFEEC1EE2877C2161D9F8F2D81319566 /* AlamofireImage-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AlamofireImage-framework.debug.xcconfig"; sourceTree = "<group>"; };
+		D0676C805A94EEBB79D827FF98773D12 /* Pods-WeatherApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeatherApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		D1234D16D259AA3B59C20494F06F9276 /* Alamofire-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "Alamofire-library.modulemap"; path = "../Alamofire-library/Alamofire-library.modulemap"; sourceTree = "<group>"; };
 		D2DCCA317D739BA73CEF715C207F75E5 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
+		D50E6405788080C0B0E330EDA7C40F03 /* Pods-WeatherApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeatherApp-Info.plist"; sourceTree = "<group>"; };
 		D7D68FD1727196A4DFD440CC6744613E /* UIImage+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AlamofireImage.swift"; path = "Source/UIImage+AlamofireImage.swift"; sourceTree = "<group>"; };
-		D914DD15628A0475149C555F2661774D /* Pods-NetworkAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetworkAPI.release.xcconfig"; sourceTree = "<group>"; };
+		DA91F2CBDFB49AFACB36451BE0981F6E /* Pods-NetworkAPI-NetworkAPITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NetworkAPI-NetworkAPITests-umbrella.h"; sourceTree = "<group>"; };
 		DFECED41270A1E4BF6548076D60F154D /* Alamofire-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-framework-umbrella.h"; sourceTree = "<group>"; };
 		E097599F45E8E7C26BD53E497460EDF1 /* Alamofire-framework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Alamofire-framework.modulemap"; sourceTree = "<group>"; };
 		E3727E59DD86C7894F0A85BEA9D65D4F /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Source/ImageCache.swift; sourceTree = "<group>"; };
 		E3AE63C5A1AB36E1DA95A8E03F3A2738 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/Image.swift; sourceTree = "<group>"; };
+		E41BAD423D990155B6713D9FD5CAC8FB /* Pods-NetworkAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetworkAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		E92370E38CDA7D4A7EC041E4FB0B1F83 /* Alamofire-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Alamofire-library-prefix.pch"; path = "../Alamofire-library/Alamofire-library-prefix.pch"; sourceTree = "<group>"; };
 		EA533C69C1014066DBB82A2DE37C9462 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		EB1A57E447C9E22B7E508C1B455C1E7E /* AlamofireImage-framework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AlamofireImage-framework-Info.plist"; sourceTree = "<group>"; };
 		F06C93D8B146970A98C2A3EAF209DEEA /* Alamofire-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-framework-prefix.pch"; sourceTree = "<group>"; };
 		F7380A173ECA7E45878623FB39BBA251 /* Alamofire-framework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-framework-Info.plist"; sourceTree = "<group>"; };
-		F7A1AFADC663C5614D054B9DA3B22FF9 /* Pods-NetworkAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NetworkAPI-umbrella.h"; sourceTree = "<group>"; };
-		F7F2BA99916E18FCE68986F3109541C9 /* Pods-WeatherApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeatherApp-umbrella.h"; sourceTree = "<group>"; };
 		FA147B8818AEE12F8C32560C8CBA9B18 /* UIImageView+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+AlamofireImage.swift"; path = "Source/UIImageView+AlamofireImage.swift"; sourceTree = "<group>"; };
 		FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		FF484D00FB89444ABA399B13A9DCA88F /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +294,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		38B124978B47205B804EC96FC81511C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		766A04C3348091B3C1FA674335DD8A25 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -383,6 +414,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		41B9BD544A3C6A77D4045822CEA6D1F6 /* Pods-WeatherApp */ = {
+			isa = PBXGroup;
+			children = (
+				B98E85342B9B9B4C3B501D3F14C1BB6A /* Pods-WeatherApp.modulemap */,
+				8F747C87E8220EAA17AF3701AB4B7461 /* Pods-WeatherApp-acknowledgements.markdown */,
+				D0676C805A94EEBB79D827FF98773D12 /* Pods-WeatherApp-acknowledgements.plist */,
+				4F33061732CBB6C96C677F11FCC0D420 /* Pods-WeatherApp-dummy.m */,
+				106088315C5977B8B0D560C37162023B /* Pods-WeatherApp-frameworks.sh */,
+				D50E6405788080C0B0E330EDA7C40F03 /* Pods-WeatherApp-Info.plist */,
+				AA2C73F87BBF307FB6698612C3465ACF /* Pods-WeatherApp-umbrella.h */,
+				473295A95F52BE1962AE20F308CC1D41 /* Pods-WeatherApp.debug.xcconfig */,
+				5E78F6F26CEFA413C655F0F3CD728DC4 /* Pods-WeatherApp.release.xcconfig */,
+			);
+			name = "Pods-WeatherApp";
+			path = "Target Support Files/Pods-WeatherApp";
+			sourceTree = "<group>";
+		};
 		48B136F15B4E207CBFF4477A3C4F5067 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,39 +449,22 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7581C7A587D2641156F2C1805FFED918 /* Pods-WeatherApp */ = {
+		88EA3FDBE2E36117A824E5E2B40917F4 /* Pods-NetworkAPI */ = {
 			isa = PBXGroup;
 			children = (
-				A1FD0214068653797AC3B725545DECEB /* Pods-WeatherApp.modulemap */,
-				03516118407AB8EB27AB46DF31C5C307 /* Pods-WeatherApp-acknowledgements.markdown */,
-				5A6D7E29D5B070D3915673F06C31902A /* Pods-WeatherApp-acknowledgements.plist */,
-				32D3ADEE6352BB7E8458C4028AFE2EE3 /* Pods-WeatherApp-dummy.m */,
-				8DEB231C72952A579329651414C9C132 /* Pods-WeatherApp-frameworks.sh */,
-				AE0BA672D004E5356E0D293C33F6D2E5 /* Pods-WeatherApp-Info.plist */,
-				F7F2BA99916E18FCE68986F3109541C9 /* Pods-WeatherApp-umbrella.h */,
-				11AD637FD861DAE148D225CA70282715 /* Pods-WeatherApp.debug.xcconfig */,
-				FF484D00FB89444ABA399B13A9DCA88F /* Pods-WeatherApp.release.xcconfig */,
-			);
-			name = "Pods-WeatherApp";
-			path = "Target Support Files/Pods-WeatherApp";
-			sourceTree = "<group>";
-		};
-		95D8780DF209A84723150717BCE01C96 /* Pods-NetworkAPI */ = {
-			isa = PBXGroup;
-			children = (
-				3D787B317267062CFC3237EF8F738002 /* Pods-NetworkAPI.modulemap */,
-				B8A45F136E7AC038A26351BADA7609A2 /* Pods-NetworkAPI-acknowledgements.markdown */,
-				6B4B609A156C86D4D848FBE2503208EE /* Pods-NetworkAPI-acknowledgements.plist */,
-				B0242F83F004B5B0C95221512041DB76 /* Pods-NetworkAPI-dummy.m */,
-				F7A1AFADC663C5614D054B9DA3B22FF9 /* Pods-NetworkAPI-umbrella.h */,
-				99652D1611DD80B857A0553198A23E54 /* Pods-NetworkAPI.debug.xcconfig */,
-				D914DD15628A0475149C555F2661774D /* Pods-NetworkAPI.release.xcconfig */,
+				B8BD815794295F0CB9DD20C85A49CE93 /* Pods-NetworkAPI.modulemap */,
+				A45585C6B77C42430161E9A1B25764AE /* Pods-NetworkAPI-acknowledgements.markdown */,
+				5AF31C4235972911AE95B883154B2F0F /* Pods-NetworkAPI-acknowledgements.plist */,
+				7CB9389BD57C14F733E2945410DCAD32 /* Pods-NetworkAPI-dummy.m */,
+				090A1A9A09386D524E56EEB638BFD119 /* Pods-NetworkAPI-umbrella.h */,
+				E41BAD423D990155B6713D9FD5CAC8FB /* Pods-NetworkAPI.debug.xcconfig */,
+				8AA3C0FFF5E43A9D4E23510B3F5D3C3E /* Pods-NetworkAPI.release.xcconfig */,
 			);
 			name = "Pods-NetworkAPI";
 			path = "Target Support Files/Pods-NetworkAPI";
 			sourceTree = "<group>";
 		};
-		B95CCB537B9ECE005DF8AB215110781C /* Products */ = {
+		8C4009E2CAED759200F86D465F16B0F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				343CE98738FF456D1F5E2995AC819CEE /* Alamofire-framework */,
@@ -441,16 +472,33 @@
 				108273D22AC9C5EAC6F7D8AD1787567C /* AlamofireImage-framework */,
 				52431D9ACCCE2D4DBAB8464B122E35F9 /* AlamofireImage-library */,
 				450E9CE5AA7BE2C99EA03188D3B59AC6 /* Pods-NetworkAPI */,
+				7348DED2DFF2B9A2AF70DCCBD87ED014 /* Pods-NetworkAPI-NetworkAPITests */,
 				5163207A4C5441588D6768F9543C2BCC /* Pods-WeatherApp */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CA6049AD752EA618D93C6B997553BB40 /* Targets Support Files */ = {
+		AE08B1990FE9E24A3716C4AA799B0DC3 /* Pods-NetworkAPI-NetworkAPITests */ = {
 			isa = PBXGroup;
 			children = (
-				95D8780DF209A84723150717BCE01C96 /* Pods-NetworkAPI */,
-				7581C7A587D2641156F2C1805FFED918 /* Pods-WeatherApp */,
+				B7ACEF3D0791D0AF1504B88D0EBF5624 /* Pods-NetworkAPI-NetworkAPITests.modulemap */,
+				2ED927666488F711692F2EB315EC02D9 /* Pods-NetworkAPI-NetworkAPITests-acknowledgements.markdown */,
+				3AE13D97E748C3508ED0E49FCBB1855F /* Pods-NetworkAPI-NetworkAPITests-acknowledgements.plist */,
+				A420D46C5A3F12DB74A00BEA56D769C9 /* Pods-NetworkAPI-NetworkAPITests-dummy.m */,
+				DA91F2CBDFB49AFACB36451BE0981F6E /* Pods-NetworkAPI-NetworkAPITests-umbrella.h */,
+				4390EA5239CF1A992F05EBB086640F3D /* Pods-NetworkAPI-NetworkAPITests.debug.xcconfig */,
+				A91629C2FC8BD50866EBCE92A5F768E0 /* Pods-NetworkAPI-NetworkAPITests.release.xcconfig */,
+			);
+			name = "Pods-NetworkAPI-NetworkAPITests";
+			path = "Target Support Files/Pods-NetworkAPI-NetworkAPITests";
+			sourceTree = "<group>";
+		};
+		B7CF4A71C2117CDD3E9E5877964C1927 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				88EA3FDBE2E36117A824E5E2B40917F4 /* Pods-NetworkAPI */,
+				AE08B1990FE9E24A3716C4AA799B0DC3 /* Pods-NetworkAPI-NetworkAPITests */,
+				41B9BD544A3C6A77D4045822CEA6D1F6 /* Pods-WeatherApp */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -461,8 +509,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				48B136F15B4E207CBFF4477A3C4F5067 /* Pods */,
-				B95CCB537B9ECE005DF8AB215110781C /* Products */,
-				CA6049AD752EA618D93C6B997553BB40 /* Targets Support Files */,
+				8C4009E2CAED759200F86D465F16B0F1 /* Products */,
+				B7CF4A71C2117CDD3E9E5877964C1927 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -529,6 +577,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDED87844383EE5938B88596E2E37928 /* Alamofire-framework-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1CA167B6FC76381958A023AE7CB2CAE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A902B8D59F0455FA55F021883CB11CCE /* Pods-NetworkAPI-NetworkAPITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,6 +709,25 @@
 			productReference = 3076B2AB289B08CBBB59B00A77261823 /* Alamofire-library */;
 			productType = "com.apple.product-type.library.static";
 		};
+		95FF5A09AF4502E280015D4154EFF022 /* Pods-NetworkAPI-NetworkAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BABDA1825553548B6C553EFF2C843CB /* Build configuration list for PBXNativeTarget "Pods-NetworkAPI-NetworkAPITests" */;
+			buildPhases = (
+				B1CA167B6FC76381958A023AE7CB2CAE /* Headers */,
+				D5EBD8342C5BE70A4C938ABAC4917C8A /* Sources */,
+				766A04C3348091B3C1FA674335DD8A25 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC682E983FE42AFE9A870CE207B0F586 /* PBXTargetDependency */,
+				9306B73EA08E1533236A412165661282 /* PBXTargetDependency */,
+			);
+			name = "Pods-NetworkAPI-NetworkAPITests";
+			productName = "Pods-NetworkAPI-NetworkAPITests";
+			productReference = 7348DED2DFF2B9A2AF70DCCBD87ED014 /* Pods-NetworkAPI-NetworkAPITests */;
+			productType = "com.apple.product-type.library.static";
+		};
 		C501D6444CB010CDEB100974375D4EDE /* AlamofireImage-library */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D747CF1CCF45D14B7C205AD497784241 /* Build configuration list for PBXNativeTarget "AlamofireImage-library" */;
@@ -690,7 +765,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = B95CCB537B9ECE005DF8AB215110781C /* Products */;
+			productRefGroup = 8C4009E2CAED759200F86D465F16B0F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -699,6 +774,7 @@
 				3DF15621FF7205479640D30C28A433E4 /* AlamofireImage-framework */,
 				C501D6444CB010CDEB100974375D4EDE /* AlamofireImage-library */,
 				2A1804F2F3C0452FA63456931C2FBFE5 /* Pods-NetworkAPI */,
+				95FF5A09AF4502E280015D4154EFF022 /* Pods-NetworkAPI-NetworkAPITests */,
 				2FB376565AEB9484417E14E6A834885C /* Pods-WeatherApp */,
 			);
 		};
@@ -810,6 +886,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F8C44BB1102430F0BD27C08850851FF /* Pods-WeatherApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5EBD8342C5BE70A4C938ABAC4917C8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6046EDAEAB08309812F57CE54A3F037A /* Pods-NetworkAPI-NetworkAPITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -939,11 +1023,23 @@
 			target = 3DF15621FF7205479640D30C28A433E4 /* AlamofireImage-framework */;
 			targetProxy = 8D382DFF0A77EDBC591CBE56DD67F77A /* PBXContainerItemProxy */;
 		};
+		9306B73EA08E1533236A412165661282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AlamofireImage-library";
+			target = C501D6444CB010CDEB100974375D4EDE /* AlamofireImage-library */;
+			targetProxy = B1636967A7A1E5C6CC5AF0F58A1273CF /* PBXContainerItemProxy */;
+		};
 		A38698CFEF31840C51290E1B791BED36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Alamofire-library";
 			target = 47497BE8AA365DA8AAEFDEEEC086ABF6 /* Alamofire-library */;
 			targetProxy = 717089030B2863302E769C64A84D3984 /* PBXContainerItemProxy */;
+		};
+		BC682E983FE42AFE9A870CE207B0F586 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire-library";
+			target = 47497BE8AA365DA8AAEFDEEEC086ABF6 /* Alamofire-library */;
+			targetProxy = F9F1702D597457C5F06F46389059E94F /* PBXContainerItemProxy */;
 		};
 		E700E3ADD09AF98038DA3DB39BDF2C1F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1148,6 +1244,28 @@
 			};
 			name = Release;
 		};
+		3F826A021D9D90B5D32E6CBF7D0CDE76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4390EA5239CF1A992F05EBB086640F3D /* Pods-NetworkAPI-NetworkAPITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NetworkAPI-NetworkAPITests/Pods-NetworkAPI-NetworkAPITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		3FF207157C4134F8A26C5A61805E1991 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 75C054C49353A88565096902CE8E342C /* AlamofireImage-framework.release.xcconfig */;
@@ -1274,7 +1392,7 @@
 		};
 		790111F24B76117B74673113156FB2B0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D914DD15628A0475149C555F2661774D /* Pods-NetworkAPI.release.xcconfig */;
+			baseConfigurationReference = 8AA3C0FFF5E43A9D4E23510B3F5D3C3E /* Pods-NetworkAPI.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1357,7 +1475,7 @@
 		};
 		98FE20611C2EED5A26E9EE01A6097320 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF484D00FB89444ABA399B13A9DCA88F /* Pods-WeatherApp.release.xcconfig */;
+			baseConfigurationReference = 5E78F6F26CEFA413C655F0F3CD728DC4 /* Pods-WeatherApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1393,9 +1511,32 @@
 			};
 			name = Release;
 		};
+		A5F8FBC9EF834C5067C59AE1B4FC7860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A91629C2FC8BD50866EBCE92A5F768E0 /* Pods-NetworkAPI-NetworkAPITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NetworkAPI-NetworkAPITests/Pods-NetworkAPI-NetworkAPITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		BF7B14E78FF94E2D56D89FB98F492A3E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11AD637FD861DAE148D225CA70282715 /* Pods-WeatherApp.debug.xcconfig */;
+			baseConfigurationReference = 473295A95F52BE1962AE20F308CC1D41 /* Pods-WeatherApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1432,7 +1573,7 @@
 		};
 		F7685C73E38AA537BBC0679B2F7EDCF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99652D1611DD80B857A0553198A23E54 /* Pods-NetworkAPI.debug.xcconfig */;
+			baseConfigurationReference = E41BAD423D990155B6713D9FD5CAC8FB /* Pods-NetworkAPI.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1496,6 +1637,15 @@
 			buildConfigurations = (
 				BF7B14E78FF94E2D56D89FB98F492A3E /* Debug */,
 				98FE20611C2EED5A26E9EE01A6097320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BABDA1825553548B6C553EFF2C843CB /* Build configuration list for PBXNativeTarget "Pods-NetworkAPI-NetworkAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F826A021D9D90B5D32E6CBF7D0CDE76 /* Debug */,
+				A5F8FBC9EF834C5067C59AE1B4FC7860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

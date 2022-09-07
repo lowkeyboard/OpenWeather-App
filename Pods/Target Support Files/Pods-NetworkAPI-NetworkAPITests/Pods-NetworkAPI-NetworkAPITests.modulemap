@@ -1,0 +1,6 @@
+module Pods_NetworkAPI_NetworkAPITests {
+  umbrella header "Pods-NetworkAPI-NetworkAPITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

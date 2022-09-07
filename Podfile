@@ -15,9 +15,11 @@ end
 
 #networkapi module
 target 'NetworkAPI' do
-    project 'WeatherApp/NetworkAPI/NetworkAPI.project'
-    pod 'Alamofire', '~> 5.5'
-    pod 'AlamofireImage'
+    project 'NetworkAPI/NetworkAPI.project'
+    networkapi_pods
+    target 'NetworkAPITests' do
+        inherit! :complete
+    end
 end
 
 #app module

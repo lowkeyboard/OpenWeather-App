@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		09D4140FAA3BFFE7F5E0F42D /* Pods_WeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B37E2DFFBF136C300A4F23 /* Pods_WeatherApp.framework */; };
-		A25BBDF628C89E29006AC622 /* NetworkAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F5CAB328C899EB004260FD /* NetworkAPI.framework */; };
-		A25BBDF728C89E29006AC622 /* NetworkAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A2F5CAB328C899EB004260FD /* NetworkAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A26AADCB28C8A0A300FCFC59 /* NetworkAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26AADCA28C8A0A300FCFC59 /* NetworkAPI.framework */; };
+		A26AADCC28C8A0A300FCFC59 /* NetworkAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A26AADCA28C8A0A300FCFC59 /* NetworkAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A284585928C884FA00222185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A284585828C884FA00222185 /* AppDelegate.swift */; };
 		A284585B28C884FA00222185 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A284585A28C884FA00222185 /* SceneDelegate.swift */; };
 		A284585D28C884FA00222185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A284585C28C884FA00222185 /* ViewController.swift */; };
@@ -18,31 +18,14 @@
 		A284586528C884FB00222185 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A284586328C884FB00222185 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A2F5CAB228C899EB004260FD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A2F5CAAD28C899EA004260FD /* NetworkAPI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A2F5CA9528C899EA004260FD;
-			remoteInfo = NetworkAPI;
-		};
-		A2F5CAB428C899EB004260FD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A2F5CAAD28C899EA004260FD /* NetworkAPI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A2F5CA9D28C899EA004260FD;
-			remoteInfo = NetworkAPITests;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		A25BBDF828C89E2A006AC622 /* Embed Frameworks */ = {
+		A26AADCD28C8A0A300FCFC59 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A25BBDF728C89E29006AC622 /* NetworkAPI.framework in Embed Frameworks */,
+				A26AADCC28C8A0A300FCFC59 /* NetworkAPI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A26AADCA28C8A0A300FCFC59 /* NetworkAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A284585528C884FA00222185 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A284585828C884FA00222185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A284585A28C884FA00222185 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +42,6 @@
 		A284586128C884FB00222185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A284586428C884FB00222185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A284586628C884FB00222185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2F5CAAD28C899EA004260FD /* NetworkAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkAPI.xcodeproj; path = WeatherApp/NetworkAPI/NetworkAPI.xcodeproj; sourceTree = "<group>"; };
 		B4B37E2DFFBF136C300A4F23 /* Pods_WeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA76FBF17456ED35E7B3F9CF /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		D831F0466059353219116570 /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A25BBDF628C89E29006AC622 /* NetworkAPI.framework in Frameworks */,
+				A26AADCB28C8A0A300FCFC59 /* NetworkAPI.framework in Frameworks */,
 				09D4140FAA3BFFE7F5E0F42D /* Pods_WeatherApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,15 +63,24 @@
 		5E04330B817D320F11138D0E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A26AADCA28C8A0A300FCFC59 /* NetworkAPI.framework */,
 				B4B37E2DFFBF136C300A4F23 /* Pods_WeatherApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A26AADD728C8B89000FCFC59 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A284585828C884FA00222185 /* AppDelegate.swift */,
+				A284585A28C884FA00222185 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		A284584C28C884FA00222185 = {
 			isa = PBXGroup;
 			children = (
-				A2F5CAAD28C899EA004260FD /* NetworkAPI.xcodeproj */,
 				A284585728C884FA00222185 /* WeatherApp */,
 				A284585628C884FA00222185 /* Products */,
 				ECBBB5D2E4916E6EBFDBF814 /* Pods */,
@@ -107,8 +99,7 @@
 		A284585728C884FA00222185 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				A284585828C884FA00222185 /* AppDelegate.swift */,
-				A284585A28C884FA00222185 /* SceneDelegate.swift */,
+				A26AADD728C8B89000FCFC59 /* App */,
 				A284585C28C884FA00222185 /* ViewController.swift */,
 				A284585E28C884FA00222185 /* Main.storyboard */,
 				A284586128C884FB00222185 /* Assets.xcassets */,
@@ -116,15 +107,6 @@
 				A284586628C884FB00222185 /* Info.plist */,
 			);
 			path = WeatherApp;
-			sourceTree = "<group>";
-		};
-		A2F5CAAE28C899EA004260FD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A2F5CAB328C899EB004260FD /* NetworkAPI.framework */,
-				A2F5CAB528C899EB004260FD /* NetworkAPITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		ECBBB5D2E4916E6EBFDBF814 /* Pods */ = {
@@ -148,7 +130,7 @@
 				A284585228C884FA00222185 /* Frameworks */,
 				A284585328C884FA00222185 /* Resources */,
 				AE75B076D6B1AE76348331BA /* [CP] Embed Pods Frameworks */,
-				A25BBDF828C89E2A006AC622 /* Embed Frameworks */,
+				A26AADCD28C8A0A300FCFC59 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,35 +167,12 @@
 			mainGroup = A284584C28C884FA00222185;
 			productRefGroup = A284585628C884FA00222185 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A2F5CAAE28C899EA004260FD /* Products */;
-					ProjectRef = A2F5CAAD28C899EA004260FD /* NetworkAPI.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A284585428C884FA00222185 /* WeatherApp */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		A2F5CAB328C899EB004260FD /* NetworkAPI.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = NetworkAPI.framework;
-			remoteRef = A2F5CAB228C899EB004260FD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A2F5CAB528C899EB004260FD /* NetworkAPITests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = NetworkAPITests.xctest;
-			remoteRef = A2F5CAB428C899EB004260FD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A284585328C884FA00222185 /* Resources */ = {

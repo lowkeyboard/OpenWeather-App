@@ -13,7 +13,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let dummy = Dummy()
+        let service = NetworkService()
+        
+        service.requestDailyForecastWeather(lat: 51.50998, lon: 0.1337) { response in
+            print(response)
+        } failure: { err in
+            print(err)
+        }
+
     }
     
 
