@@ -23,116 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CFB5C626-61CE-41EA-BE41-5FA825525E46"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NetworkAPI/NetworkAPI/NetworkService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "requestDailyForecastWeather(lat:lon:cnt:success:failure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CA3E0E3F-8105-4BAF-A03A-EE266663EF03"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NetworkAPI/NetworkAPI/NetworkService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "requestDailyForecastWeather(lat:lon:cnt:success:failure:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9D312282-5F14-4531-8F6C-7C4131E3A65A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NetworkAPI/NetworkAPI/NetworkService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "requestDailyForecastWeather(lat:lon:cnt:success:failure:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9D312282-5F14-4531-8F6C-7C4131E3A65A - d9b29f7a8ec2a66b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;NetworkAPI.DailyForecastWeatherResponse, Alamofire.AFError&gt;) -&gt; () in NetworkAPI.NetworkService.requestDailyForecastWeather(lat: Swift.Double, lon: Swift.Double, cnt: Swift.Int, success: (NetworkAPI.DailyForecastWeatherResponse) -&gt; (), failure: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "NetworkAPI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cei/Desktop/WeatherApp/NetworkAPI/NetworkAPI/NetworkService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "1354">
-               </Location>
-               <Location
-                  uuid = "9D312282-5F14-4531-8F6C-7C4131E3A65A - d9b29f7a8ec2a60a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;NetworkAPI.DailyForecastWeatherResponse, Alamofire.AFError&gt;) -&gt; () in NetworkAPI.NetworkService.requestDailyForecastWeather(lat: Swift.Double, lon: Swift.Double, cnt: Swift.Int, success: (NetworkAPI.DailyForecastWeatherResponse) -&gt; (), failure: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "NetworkAPI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cei/Desktop/WeatherApp/NetworkAPI/NetworkAPI/NetworkService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "1619">
-               </Location>
-               <Location
-                  uuid = "9D312282-5F14-4531-8F6C-7C4131E3A65A - d9b29f7a8ec2a60a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;NetworkAPI.DailyForecastWeatherResponse, Alamofire.AFError&gt;) -&gt; () in NetworkAPI.NetworkService.requestDailyForecastWeather(lat: Swift.Double, lon: Swift.Double, cnt: Swift.Int, success: (NetworkAPI.DailyForecastWeatherResponse) -&gt; (), failure: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "NetworkAPI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cei/Desktop/WeatherApp/NetworkAPI/NetworkAPI/NetworkService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "2845">
-               </Location>
-               <Location
-                  uuid = "9D312282-5F14-4531-8F6C-7C4131E3A65A - d9b29f7a8ec2a60a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;NetworkAPI.DailyForecastWeatherResponse, Alamofire.AFError&gt;) -&gt; () in NetworkAPI.NetworkService.requestDailyForecastWeather(lat: Swift.Double, lon: Swift.Double, cnt: Swift.Int, success: (NetworkAPI.DailyForecastWeatherResponse) -&gt; (), failure: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "NetworkAPI"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cei/Desktop/WeatherApp/NetworkAPI/NetworkAPI/NetworkService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "1743">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "5EC3EC13-C279-4D05-9300-EEF0632A0BFF"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -577,8 +467,8 @@
             filePath = "WeatherApp/Weather/WeatherViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "handleViewModelOutput(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -625,9 +515,89 @@
             filePath = "WeatherApp/Weather/WeatherViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECE05AE5-03A8-420C-A584-79FA994DEC18"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeatherApp/Weather/WeatherViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "handleViewModelOutput(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D25D1FA-09C8-46FD-A0F4-CA1A9AEF1599"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetworkAPI/NetworkAPI/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "requestDailyForecastWeather(lat:lon:cnt:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "43386DF2-8A77-4CDC-B14A-6F1933D87577"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetworkAPI/NetworkAPI/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "requestDailyForecastWeather(lat:lon:cnt:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2BCBC8D2-4968-41B8-A053-A14950A7F4EB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetworkAPI/NetworkAPI/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "requestCurrentForecastWeather(lat:lon:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC1793F1-1D7F-47C1-9235-5F3CA5A5F536"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetworkAPI/NetworkAPI/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "requestDailyForecastWeather(lat:lon:cnt:success:failure:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

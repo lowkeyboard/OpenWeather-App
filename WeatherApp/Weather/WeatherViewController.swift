@@ -20,6 +20,9 @@ final class WeatherViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.delegate = self
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
         viewModel.loadCurrentForecast()
         viewModel.loadDailyForecast()
     }
@@ -44,7 +47,7 @@ extension WeatherViewController: WeatherViewModelDelegate {
     }
 }
 
-extension WeatherViewController: UITableViewDataSource {
+extension WeatherViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presentDaily.count
