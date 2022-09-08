@@ -8,8 +8,22 @@
 import Foundation
 import NetworkAPI
 
-struct DailyWeatherRepresentation {
-    let list: List
+final class DailyWeatherRepresentation: NSObject {
+    var dateTime: String
+    var temperature: Double?
+    var iconName: String
+    
+    
+    init(dateTime: String, temperature: Double?, iconName: String) {
+        self.dateTime = dateTime
+        self.temperature = temperature
+        self.iconName = iconName
+    }
+    
 }
 
-//TODO:
+extension DailyWeatherRepresentation {
+    convenience init(list: [List]) {
+        self.init(list: list)
+    }
+}

@@ -9,7 +9,9 @@ import Foundation
 
 protocol WeatherViewModelProtocol: AnyObject {
     var delegate: WeatherViewModelDelegate? { get set }
-    func load()
+    func loadCurrentForecast()
+    func loadDailyForecast()
+
 
 }
 
@@ -17,7 +19,7 @@ enum WeatherViewModelOutput {
     case updateTitle(String)
     case setLoading(Bool)
     case showCurrent(CurrentWeatherPresentation)
-    case showDaily(DailyWeatherRepresentation) //equatable arr
+    case showDaily(DailyWeatherRepresentation)
 }
 
 protocol WeatherViewModelDelegate {

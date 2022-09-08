@@ -19,7 +19,8 @@ final class WeatherViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.delegate = self
-        viewModel.load()
+        viewModel.loadCurrentForecast()
+        viewModel.loadDailyForecast()
     }
 }
 
@@ -34,8 +35,11 @@ extension WeatherViewController: WeatherViewModelDelegate {
             self.currentWeather = currentWeather
             self.weatherTitle.text = "\(currentWeather.temperature)\n \(currentWeather.iconName)"
             self.tableView.reloadData()
-        case .showDaily(_):
-            print("showDaily.")
+        case .showDaily(let present):
+            print("showDaily...")
+                
+            
+            
         }
 
     }
