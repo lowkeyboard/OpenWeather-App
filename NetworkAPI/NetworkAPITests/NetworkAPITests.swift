@@ -20,16 +20,11 @@ class NetworkAPITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
+    func testCurrentForecastRequest() throws {
+    }
+    
     func testDailyForecastRequest() throws {
-        dummyService.requestCurrentForecastWeather(lat: 51.50998, lon: 0.1337) { response in
-            guard let responseData = response.main?.temp else { return }
-            
-            XCTAssertEqual(responseData, 4)
-            
-        } failure: { err in
-            XCTAssertFalse(false)
-        }
-
+ 
     }
 
     func testPerformanceExample() throws {
