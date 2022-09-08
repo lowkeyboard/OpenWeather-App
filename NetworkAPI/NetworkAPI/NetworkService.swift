@@ -36,7 +36,27 @@ public class NetworkService: ServiceProtocol {
     
     public func requestDailyForecastWeather(lat: CLLocationDegrees, lon: CLLocationDegrees, cnt: Int, success: @escaping (DailyForecastWeatherResponse) -> Void, failure: @escaping (Error?) -> Void) {
         
+        //https://api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&cnt=7&appid=8ddadecc7ae4f56fee73b2b405a63659
         
+        let url = "\(Service.baseUrl)/forecast?lat=\(lat)&lon=\(lon)&con=\(cnt)&appid=\(Service.apiKey)"
+        let params: [String:String] = [
+            "lat": "\"(lat)",
+            "lon": "\(lon)",
+            "appid": Service.apiKey,
+          ]
+        
+            print("Sending request... \(url)")
+
+        
+        AF.request(url, method: .get, parameters: params).validate().responseDecodable(of: DailyForecastWeatherResponse.self) { (model) in
+            guard let data = model.value else {
+                print(model.response ?? "")
+                return
+            }
+            print(data)
+            success(data)
+        }
+
         
     }
     
