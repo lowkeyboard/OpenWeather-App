@@ -11,6 +11,9 @@ final class HomeBuilder {
     static func make() -> HomeViewController {
         let storyboard = UIStoryboard(name: "Home", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "Home") as! HomeViewController
+        
+        viewController.viewModel = HomeViewModel(service: app.service)
+
         return viewController
     }
 }

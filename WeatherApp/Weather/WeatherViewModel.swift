@@ -11,7 +11,7 @@ import NetworkAPI
 final class WeatherViewModel: WeatherViewModelProtocol {
     
     weak var delegate: WeatherViewModelDelegate?
-    private let presentation: WeatherPresentation?
+    private var presentation: WeatherPresentation?
     var apiKey: String?
     
     init(apiKey: String) {

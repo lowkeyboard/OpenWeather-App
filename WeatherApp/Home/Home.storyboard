@@ -11,39 +11,29 @@
         <!--Home View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="Home" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="WeatherApp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bCr-5X-zFz">
-                                <rect key="frame" x="114" y="311" width="198" height="32.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="keyTextField:" destination="NlH-ds-CZB" eventType="editingDidEnd" id="bwL-vJ-DRR"/>
-                                </connections>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mDT-Zz-jbI">
-                                <rect key="frame" x="114" y="311" width="198" height="32.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32.5" id="ARO-5Z-mNA"/>
-                                </constraints>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mDT-Zz-jbI">
+                                <rect key="frame" x="66" y="286" width="287" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="keyTextField:" destination="NlH-ds-CZB" eventType="editingDidEnd" id="PdM-fw-Yh4"/>
-                                    <action selector="textField:" destination="NlH-ds-CZB" eventType="editingDidEnd" id="tEc-st-O9H"/>
+                                    <action selector="keyTextField:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="wbe-oh-Ukj"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyd-EJ-uil">
-                                <rect key="frame" x="114" y="405" width="198" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyd-EJ-uil">
+                                <rect key="frame" x="66" y="436" width="287" height="57"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="ZAf-yU-cnb"/>
+                                    <constraint firstAttribute="height" constant="57" id="elS-kZ-RYO"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
+                                    <action selector="loginButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2wz-SB-KYw"/>
                                     <action selector="loginButton:" destination="NlH-ds-CZB" eventType="touchUpInside" id="ZLo-Hu-mDS"/>
                                 </connections>
                             </button>
@@ -51,25 +41,19 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="nyd-EJ-uil" firstAttribute="height" secondItem="bCr-5X-zFz" secondAttribute="height" constant="1.5" id="0wS-h4-vtP"/>
-                            <constraint firstItem="mDT-Zz-jbI" firstAttribute="top" secondItem="bCr-5X-zFz" secondAttribute="top" id="1Mj-K8-w9m"/>
-                            <constraint firstItem="mDT-Zz-jbI" firstAttribute="bottom" secondItem="bCr-5X-zFz" secondAttribute="bottom" id="C17-0o-VMO"/>
-                            <constraint firstItem="nyd-EJ-uil" firstAttribute="top" secondItem="bCr-5X-zFz" secondAttribute="bottom" constant="61.5" id="Jhv-c7-s93"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bCr-5X-zFz" secondAttribute="trailing" constant="102" id="TiN-c7-1kO"/>
-                            <constraint firstItem="mDT-Zz-jbI" firstAttribute="trailing" secondItem="bCr-5X-zFz" secondAttribute="trailing" id="brO-A0-aVA"/>
-                            <constraint firstItem="nyd-EJ-uil" firstAttribute="width" secondItem="bCr-5X-zFz" secondAttribute="width" id="eyh-XV-1ft"/>
-                            <constraint firstItem="nyd-EJ-uil" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-26" id="fUe-nN-j5H"/>
-                            <constraint firstItem="mDT-Zz-jbI" firstAttribute="leading" secondItem="bCr-5X-zFz" secondAttribute="leading" id="iQP-o7-uGF"/>
-                            <constraint firstItem="bCr-5X-zFz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="114" id="poK-bg-7QT"/>
-                            <constraint firstItem="bCr-5X-zFz" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="269" id="v5i-2B-MXk"/>
-                            <constraint firstItem="bCr-5X-zFz" firstAttribute="centerX" secondItem="nyd-EJ-uil" secondAttribute="centerX" id="yP9-XB-XrA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mDT-Zz-jbI" secondAttribute="trailing" constant="61" id="LWr-cj-XJZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="nyd-EJ-uil" secondAttribute="bottom" constant="369" id="SMM-uA-hf9"/>
+                            <constraint firstItem="mDT-Zz-jbI" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="242" id="SXb-I6-gVT"/>
+                            <constraint firstItem="mDT-Zz-jbI" firstAttribute="trailing" secondItem="nyd-EJ-uil" secondAttribute="trailing" id="X7t-dj-eAf"/>
+                            <constraint firstItem="mDT-Zz-jbI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="66" id="kc0-AN-J5g"/>
+                            <constraint firstItem="mDT-Zz-jbI" firstAttribute="leading" secondItem="nyd-EJ-uil" secondAttribute="leading" id="vo6-wi-qPM"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="NlH-ds-CZB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="109" y="108"/>
+            <point key="canvasLocation" x="108.69565217391305" y="107.8125"/>
         </scene>
     </scenes>
     <resources>
