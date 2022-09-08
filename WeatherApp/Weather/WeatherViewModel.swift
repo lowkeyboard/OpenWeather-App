@@ -29,19 +29,20 @@ final class WeatherViewModel: WeatherViewModelProtocol {
         service.requestCurrentForecastWeather(lat: 10, lon: 20, success: { [weak self] model in
             guard let self = self else { return }
             self.notify(.setLoading(false))
-            self.currentResult = model
-            self.presentationCurrent?.temperature = self.currentResult?.main?.tempMax
-            self.presentationCurrent?.iconName = (self.currentResult?.weather?.first?.icon)!
-            self.notify(.showCurrent(self.presentationCurrent!))
+            
+            let present: CurrentWeatherPresentation = CurrentWeatherPresentation(temperature: model.main?.temp, iconName: model.weather?.first?.icon ?? "")
+            
+//            self.presentationCurrent?.temperature = model.main?.tempMax
+//            self.presentationCurrent?.iconName = model.weather?.first?.icon ?? ""
+            
+            
+            print(present)
+
+            self.notify(.showCurrent(present))
+
         }, failure: { error in
             print(error ?? "Error occured with Weather service.")
         })
-
-    }
-
-    func selectWeather(at index: Int) {
-        print("Weather at \(index) has selected")
-        self.coordinator?.navigateToDetail(index: index)
 
     }
 
