@@ -10,18 +10,44 @@ import NetworkAPI
 
 final class WeatherViewModel: WeatherViewModelProtocol {
     
-    weak var delegate: WeatherViewModelDelegate?
-    private var presentation: WeatherPresentation?
-    var apiKey: String?
-    
-    init(apiKey: String) {
-        self.apiKey = apiKey
+    var delegate: WeatherViewModelDelegate?
+    var key: String
+    private var currentResult: CurrentForecastWeatherResponse?
+    private var presentationCurrent: CurrentWeatherPresentation?
+    private let service: ServiceProtocol
+
+    init(service: ServiceProtocol, key: String) {
+        self.service = service
+        self.key = key
     }
-    
+
     func load() {
-        guard let presentation = presentation else {
-            return
-        }
-        delegate?.showDetail(presentation)
+
+        notify(.updateTitle("Weathers"))
+        notify(.setLoading(true))
+
+        service.requestCurrentForecastWeather(lat: 10, lon: 20, success: { [weak self] model in
+            guard let self = self else { return }
+            self.notify(.setLoading(false))
+            self.currentResult = model
+            self.presentationCurrent?.temperature = self.currentResult?.main?.tempMax
+            self.presentationCurrent?.iconName = (self.currentResult?.weather?.first?.icon)!
+            self.notify(.showCurrent(self.presentationCurrent!))
+        }, failure: { error in
+            print(error ?? "Error occured with Weather service.")
+        })
+
     }
+
+    func selectWeather(at index: Int) {
+        print("Weather at \(index) has selected")
+        self.coordinator?.navigateToDetail(index: index)
+
+    }
+
+    private func notify(_ output: WeatherViewModelOutput) {
+        delegate?.handleViewModelOutput(output)
+    }
+
+
 }

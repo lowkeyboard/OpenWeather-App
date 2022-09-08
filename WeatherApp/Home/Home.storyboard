@@ -49,6 +49,9 @@
                             <constraint firstItem="mDT-Zz-jbI" firstAttribute="leading" secondItem="nyd-EJ-uil" secondAttribute="leading" id="vo6-wi-qPM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="keyText" destination="mDT-Zz-jbI" id="Wxg-tp-Z5j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="NlH-ds-CZB" userLabel="Exit" sceneMemberID="exit"/>

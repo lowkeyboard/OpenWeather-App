@@ -12,8 +12,10 @@ final class HomeViewController: UIViewController {
     
     var viewModel = HomeViewModel(service: app.service)
 
+    @IBOutlet weak var keyText: UITextField!
     override func viewDidLoad() {
         viewModel.delegate = self
+        keyText.text = "8ddadecc7ae4f56fee73b2b405a63659"
     }
     
     @IBAction func keyTextField(_ sender: Any) {
@@ -21,7 +23,7 @@ final class HomeViewController: UIViewController {
     }
     
     @IBAction func loginButton(_ sender: Any) {
-        viewModel.keyObtained(apiKey: "8ddadecc7ae4f56fee73b2b405a63659")
+        viewModel.keyObtained(apiKey: keyText.text ?? "8ddadecc7ae4f56fee73b2b405a63659")
         print("button pressed")
     }
 }
@@ -32,7 +34,8 @@ extension HomeViewController: HomeViewModelDelegate {
         switch route {
         case .detail(let viewModel):
             let viewController = WeatherBuilder.make(with: viewModel)
-            show(viewController, sender: nil)
+            viewController.modalPresentationStyle = .fullScreen
+            present(viewController, animated: false)
         }
     }
 }

@@ -21,7 +21,9 @@ final class WeatherViewController: UIViewController {
 }
 
 extension WeatherViewController: WeatherViewModelDelegate {
-    func showDetail(_ presentation: WeatherPresentation) {
+    func handleViewModelOutput(_ output: WeatherViewModelOutput) {
         
     }
+    
+    
 }

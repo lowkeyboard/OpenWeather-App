@@ -7,11 +7,19 @@
 
 import Foundation
 
-protocol WeatherViewModelDelegate: class {
-    func showDetail(_ presentation: WeatherPresentation)
-}
-
-protocol WeatherViewModelProtocol {
+protocol WeatherViewModelProtocol: AnyObject {
     var delegate: WeatherViewModelDelegate? { get set }
     func load()
+
+}
+
+enum WeatherViewModelOutput {
+    case updateTitle(String)
+    case setLoading(Bool)
+    case showCurrent(CurrentWeatherPresentation)
+    case showDaily(DailyWeatherRepresentation) //equatable arr
+}
+
+protocol WeatherViewModelDelegate {
+    func handleViewModelOutput(_ output: WeatherViewModelOutput)
 }

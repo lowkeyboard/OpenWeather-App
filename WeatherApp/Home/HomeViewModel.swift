@@ -32,7 +32,7 @@ final class HomeViewModel: HomeViewModelProtocol {
     
     
     func keyObtained(apiKey: String) {
-        let viewModel = WeatherViewModel(apiKey: apiKey)
+        let viewModel = WeatherViewModel(service: app.service, key: apiKey)
         delegate?.navigate(to: .detail(viewModel))
     }
 
