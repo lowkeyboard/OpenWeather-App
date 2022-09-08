@@ -13,6 +13,7 @@ final class WeatherViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var viewModel: WeatherViewModelProtocol!
     private var currentWeather: CurrentWeatherPresentation?
+    var presentDaily : [DailyWeatherRepresentation] = []
     
     @IBOutlet weak var weatherTitle: UILabel!
     
@@ -33,14 +34,29 @@ extension WeatherViewController: WeatherViewModelDelegate {
             UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
         case .showCurrent(let currentWeather):
             self.currentWeather = currentWeather
-            self.weatherTitle.text = "\(currentWeather.temperature)\n \(currentWeather.iconName)"
             self.tableView.reloadData()
         case .showDaily(let present):
             print("showDaily...")
-                
-            
-            
+            self.presentDaily = present
+            tableView.reloadData()
         }
+
+    }
+}
+
+extension WeatherViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return presentDaily.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+      let cell = Bundle.main.loadNibNamed("TableViewCell", owner: self, options: nil)?.first as! WeatherTableViewCell
+      let pre = self.presentDaily[indexPath.row]
+      cell.dayLabel.text = "\(pre.dateTime)"
+     
+      return cell
 
     }
     

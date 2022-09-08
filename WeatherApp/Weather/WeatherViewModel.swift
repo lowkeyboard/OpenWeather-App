@@ -46,8 +46,8 @@ final class WeatherViewModel: WeatherViewModelProtocol {
             self.notify(.setLoading(false))
             guard let response = model.list else { return }
             let present: DailyWeatherRepresentation  = DailyWeatherRepresentation(list: response)
-            
-            self.notify(.showDaily(present))
+    
+            self.notify(.showDaily([present]))
             
         } failure: { error in
             print(error ?? "Error occured with Weather service.")

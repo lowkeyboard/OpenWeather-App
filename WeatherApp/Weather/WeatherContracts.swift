@@ -19,7 +19,7 @@ enum WeatherViewModelOutput {
     case updateTitle(String)
     case setLoading(Bool)
     case showCurrent(CurrentWeatherPresentation)
-    case showDaily(DailyWeatherRepresentation)
+    case showDaily([DailyWeatherRepresentation])
 }
 
 protocol WeatherViewModelDelegate {

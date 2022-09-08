@@ -7,8 +7,13 @@
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+class WeatherTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var tempLowLabel: UILabel!
+    @IBOutlet weak var tempHighLabel: UILabel!
+    @IBOutlet weak var iconView: UIImageView!
+    @IBOutlet weak var dayLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
