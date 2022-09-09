@@ -51,7 +51,6 @@ public class NetworkService: ServiceProtocol {
     
         AF.request(url, method: .get, parameters: params, encoding: URLEncoding.default, headers: nil).validate().responseDecodable(of: DailyForecastWeatherResponse.self) {  (model) in
             guard let data = model.value else {
-               // print(model.response ?? "")
                 return
             }
             success(data)

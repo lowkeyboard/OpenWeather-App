@@ -20,11 +20,14 @@ final class WeatherViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.delegate = self
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        
         viewModel.loadCurrentForecast()
         viewModel.loadDailyForecast()
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        self.tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        
     }
 }
 
@@ -37,13 +40,16 @@ extension WeatherViewController: WeatherViewModelDelegate {
             UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
         case .showCurrent(let currentWeather):
             self.currentWeather = currentWeather
-            self.tableView.reloadData()
+            self.weatherTitle.text = "\(self.currentWeather?.temperature)"
+
         case .showDaily(let present):
             print("showDaily...")
-            self.presentDaily = present
-            tableView.reloadData()
+            self.presentDaily.append(present)
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
-
+        
     }
 }
 
@@ -55,12 +61,15 @@ extension WeatherViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-      let cell = Bundle.main.loadNibNamed("TableViewCell", owner: self, options: nil)?.first as! WeatherTableViewCell
-      let pre = self.presentDaily[indexPath.row]
-      cell.dayLabel.text = "\(pre.dateTime)"
-     
-      return cell
-
+        //      let cell = Bundle.main.loadNibNamed("TableViewCell", owner: self, options: nil)?.first as! TableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell else { return UITableViewCell() }
+        let pre = self.presentDaily[indexPath.row]
+        cell.dayLabel.text = "\(pre.dateTime)"
+        
+        cell.backgroundColor = .green
+        
+        return cell
+        
     }
     
     

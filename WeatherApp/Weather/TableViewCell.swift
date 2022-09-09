@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WeatherTableViewCell: UITableViewCell {
+class TableViewCell: UITableViewCell {
 
     @IBOutlet weak var tempLowLabel: UILabel!
     @IBOutlet weak var tempHighLabel: UILabel!
@@ -17,6 +17,7 @@ class WeatherTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

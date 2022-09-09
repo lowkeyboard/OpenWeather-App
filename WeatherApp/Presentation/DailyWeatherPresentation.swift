@@ -22,8 +22,10 @@ final class DailyWeatherRepresentation: NSObject {
     
 }
 
-extension DailyWeatherRepresentation {
-    convenience init(list: [List]) {
-        self.init(list: list)
-    }
-}
+//extension DailyWeatherRepresentation {
+//    convenience init(dateTime: String) {
+////        self.init(list: list.dt , list.temp, list.weather.first?.icon)
+//          self.init(da , list.temp, list.weather.first?.icon)
+//
+//    }
+//}
