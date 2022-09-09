@@ -9,15 +9,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="30" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="WeatherApp" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="WeatherApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="431" height="74"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="431" height="74"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idU-Rq-GWB">
-                        <rect key="frame" x="183" y="25" width="37" height="24"/>
+                        <rect key="frame" x="54" y="8" width="104" height="59"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="37" id="S1k-BR-lN1"/>
                         </constraints>
@@ -27,16 +27,17 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="idU-Rq-GWB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-30" id="1Mx-2s-Fqs"/>
+                    <constraint firstItem="idU-Rq-GWB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-17" id="1Mx-2s-Fqs"/>
                     <constraint firstItem="idU-Rq-GWB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="QIA-fd-s9m"/>
-                    <constraint firstItem="idU-Rq-GWB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="13" id="WX7-Qw-aoZ"/>
+                    <constraint firstItem="idU-Rq-GWB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="SQv-jC-Peb"/>
+                    <constraint firstItem="idU-Rq-GWB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="163" id="WX7-Qw-aoZ"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="dayLabel" destination="idU-Rq-GWB" id="gMo-dg-x7X"/>
             </connections>
-            <point key="canvasLocation" x="237" y="102"/>
+            <point key="canvasLocation" x="236.95652173913047" y="101.78571428571428"/>
         </tableViewCell>
     </objects>
 </document>

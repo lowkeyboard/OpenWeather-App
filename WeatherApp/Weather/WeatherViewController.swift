@@ -73,12 +73,14 @@ extension WeatherViewController: UITableViewDataSource, UITableViewDelegate {
         
         //      let cell = Bundle.main.loadNibNamed("TableViewCell", owner: self, options: nil)?.first as! TableViewCell
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell else { return UITableViewCell() }
-        let pre = self.presentList[indexPath.row].weather?.first?.main
-        cell.dayLabel.text = "\(String(describing: pre))"
         
-        print(cell.dayLabel.text)
+        guard let pre = self.presentList[indexPath.row].weather?.first?.main else { return UITableViewCell() }
+        cell.dayLabel.text = "\(pre)"
         
-        cell.backgroundColor = .green
+        
+        print(pre)
+        
+        cell.backgroundColor = .lightGray
         
         return cell
         

@@ -66,18 +66,7 @@ final class WeatherViewModel: WeatherViewModelProtocol {
                 guard let self = self else { return }
                 self.notify(.setLoading(false))
                 guard let responseList = model.list else { return }
-                        
-                
-//                self.dailyList = response
-//                _ = self.dailyList.map { element in
-//                    self.present.cnt = self.dailyList.count
-//                    self.present.dateTime = "\(String(describing: element.dt))"
-//                    self.present.temperature = element.temp?.day
-//                    self.present.iconName = element.weather?.first?.icon ?? "04n"
-//                }
-                
-                
-                
+    
                 self.notify(.showDaily(responseList))
                 
                 
