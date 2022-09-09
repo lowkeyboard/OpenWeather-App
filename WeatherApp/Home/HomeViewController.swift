@@ -38,6 +38,8 @@ final class HomeViewController: UIViewController {
     
     
     
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         viewModel.delegate = self
         LocationManager.shared.checkLocationService()
@@ -47,6 +49,9 @@ final class HomeViewController: UIViewController {
             print("willEnterForegroundNotification")
         })
         self.hideKeyboardWhenTappedAround()
+        self.keyText.placeholder =  "API KEY"
+        self.loginButton.tintColor = .lightGray
+        self.loginButton.titleLabel?.text = "Enter"
     }
     
     
