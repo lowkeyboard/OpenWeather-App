@@ -31,7 +31,7 @@ final class WeatherViewController: UIViewController {
         tableView.delegate = self
         
         self.tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
-
+        
     }
 }
 
@@ -40,6 +40,8 @@ extension WeatherViewController: WeatherViewModelDelegate {
         switch output {
         case .updateTitle(let title):
             self.weatherTitle.text = title
+        case .updateLocationTitle(let title):
+            self.locationTitle.text = title
         case .setLoading(let isLoading):
             UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
         case .showCurrent(let currentWeather):

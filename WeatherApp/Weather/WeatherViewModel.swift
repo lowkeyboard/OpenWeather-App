@@ -64,7 +64,7 @@ final class WeatherViewModel: WeatherViewModelProtocol {
         guard let lat = LocationManager.shared.lat else { return }
         guard let lon = LocationManager.shared.lon else { return }
 
-        
+        notify(.updateLocationTitle("CityName"))
         
         service.requestCurrentForecastWeather(lat: lat, lon: lon, success: { [weak self] model in
             guard let self = self else { return }
