@@ -7,15 +7,30 @@
 
 import Foundation
 import NetworkAPI
+import UIKit
 
 final class WeatherViewModel: WeatherViewModelProtocol {
+    func showIconView(iconName: String, iconView: UIImageView) {
+        if let url = URL(string: "https://openweathermap.org/img/wn/\(iconName)@2x.png") {
+            let task = URLSession.shared.dataTask(with: url) { data, response, error in
+                guard let data = data, error == nil else { return }
+                
+                DispatchQueue.main.async { /// execute on main thread
+                    iconView.image = UIImage(data: data)
+                }
+            }
+            
+            task.resume()
+        }
+    }
+    
     var delegate: WeatherViewModelDelegate?
     var key: String
     private var currentResult: CurrentForecastWeatherResponse?
     private var presentationCurrent: CurrentWeatherPresentation?
     private let service: ServiceProtocol
     private var dailyList: [List] = []
-    private var present =  DailyWeatherRepresentation(dateTime: "", temperature: nil, iconName: "")
+    private var present =  DailyWeatherRepresentation(cnt: 0, dateTime: "", temperature: nil, iconName: "")
 
     init(service: ServiceProtocol, key: String) {
         self.service = service
@@ -50,14 +65,12 @@ final class WeatherViewModel: WeatherViewModelProtocol {
                 guard let response = model.list else { return }
                 
                 self.dailyList = response
-                var presentUpdated = self.dailyList.map { element in
+                _ = self.dailyList.map { element in
+                    self.present.cnt = self.dailyList.count
                     self.present.dateTime = "\(element.dt)"
                     self.present.temperature = element.temp?.day
                     self.present.iconName = element.weather?.first?.icon ?? "04n"
                 }
-                
-                
-                
                 
                 self.notify(.showDaily(self.present))
                 
@@ -73,5 +86,6 @@ final class WeatherViewModel: WeatherViewModelProtocol {
     private func notify(_ output: WeatherViewModelOutput) {
         delegate?.handleViewModelOutput(output)
     }
+    
     
 }

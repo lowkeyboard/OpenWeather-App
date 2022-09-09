@@ -16,6 +16,8 @@ final class WeatherViewController: UIViewController {
     var presentDaily : [DailyWeatherRepresentation] = []
     
     @IBOutlet weak var weatherTitle: UILabel!
+    @IBOutlet weak var locationTitle: UILabel!
+    @IBOutlet weak var iconView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +43,11 @@ extension WeatherViewController: WeatherViewModelDelegate {
         case .showCurrent(let currentWeather):
             self.currentWeather = currentWeather
             self.weatherTitle.text = "\(self.currentWeather?.temperature)"
+            guard let icon = self.currentWeather?.iconName else { return }
+            viewModel.showIconView(iconName: icon, iconView: self.iconView)
+  
 
+            
         case .showDaily(let present):
             print("showDaily...")
             self.presentDaily.append(present)
@@ -63,8 +69,10 @@ extension WeatherViewController: UITableViewDataSource, UITableViewDelegate {
         
         //      let cell = Bundle.main.loadNibNamed("TableViewCell", owner: self, options: nil)?.first as! TableViewCell
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell else { return UITableViewCell() }
-        let pre = self.presentDaily[indexPath.row]
-        cell.dayLabel.text = "\(pre.dateTime)"
+        let pre = self.presentDaily[indexPath.row].temperature
+        cell.dayLabel.text = "\(String(describing: pre))"
+        
+        print(cell.dayLabel.text)
         
         cell.backgroundColor = .green
         

@@ -9,12 +9,14 @@ import Foundation
 import NetworkAPI
 
 final class DailyWeatherRepresentation: NSObject {
+    var cnt: Int?
     var dateTime: String
     var temperature: Double?
     var iconName: String
     
     
-    init(dateTime: String, temperature: Double?, iconName: String) {
+    init(cnt: Int?, dateTime: String, temperature: Double?, iconName: String) {
+        self.cnt = cnt
         self.dateTime = dateTime
         self.temperature = temperature
         self.iconName = iconName

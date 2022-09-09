@@ -6,11 +6,13 @@
 //
 
 import Foundation
+import UIKit
 
 protocol WeatherViewModelProtocol: AnyObject {
     var delegate: WeatherViewModelDelegate? { get set }
     func loadCurrentForecast()
     func loadDailyForecast()
+    func showIconView(iconName: String, iconView: UIImageView)
 
 
 }
