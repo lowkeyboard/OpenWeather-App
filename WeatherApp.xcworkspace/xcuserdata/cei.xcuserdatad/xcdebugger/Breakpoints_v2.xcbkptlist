@@ -467,8 +467,8 @@
             filePath = "WeatherApp/Weather/WeatherViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "handleViewModelOutput(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -515,8 +515,8 @@
             filePath = "WeatherApp/Weather/WeatherViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "handleViewModelOutput(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -627,8 +627,8 @@
             filePath = "WeatherApp/Weather/WeatherViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "handleViewModelOutput(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -643,8 +643,8 @@
             filePath = "WeatherApp/Weather/WeatherViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "handleViewModelOutput(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -659,8 +659,8 @@
             filePath = "WeatherApp/Weather/WeatherViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "handleViewModelOutput(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -691,25 +691,9 @@
             filePath = "WeatherApp/Weather/WeatherViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "handleViewModelOutput(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C00D2D58-BCBE-429B-B37C-B5F905882CF6"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WeatherApp/Weather/WeatherViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -723,8 +707,8 @@
             filePath = "WeatherApp/Weather/WeatherViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -739,8 +723,8 @@
             filePath = "WeatherApp/Weather/WeatherViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "handleViewModelOutput(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -748,17 +732,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "34C22250-140C-41C8-A8EA-9A3637360CB2"
+            uuid = "A3F9DD4D-6B48-4CF8-9249-7610C200EB0D"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WeatherApp/Weather/WeatherViewController.swift"
+            filePath = "NetworkAPI/NetworkAPI/NetworkService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "requestDailyForecastWeather(lat:lon:cnt:success:failure:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A3F9DD4D-6B48-4CF8-9249-7610C200EB0D - f7c471313a6a8569"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetworkAPI.NetworkService.requestDailyForecastWeather(lat: Swift.Double, lon: Swift.Double, cnt: Swift.Int, success: (NetworkAPI.DailyForecastWeatherResponse) -&gt; (), failure: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NetworkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cei/Desktop/WeatherApp/NetworkAPI/NetworkAPI/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "2532">
+               </Location>
+               <Location
+                  uuid = "A3F9DD4D-6B48-4CF8-9249-7610C200EB0D - f7c471313a6a8569"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetworkAPI.NetworkService.requestDailyForecastWeather(lat: Swift.Double, lon: Swift.Double, cnt: Swift.Int, success: (NetworkAPI.DailyForecastWeatherResponse) -&gt; (), failure: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NetworkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cei/Desktop/WeatherApp/NetworkAPI/NetworkAPI/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "2535">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

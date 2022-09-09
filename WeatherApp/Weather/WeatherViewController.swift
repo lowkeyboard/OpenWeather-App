@@ -44,10 +44,9 @@ extension WeatherViewController: WeatherViewModelDelegate {
             UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
         case .showCurrent(let currentWeather):
             self.currentWeather = currentWeather
-            
             guard let temp = self.currentWeather?.temperature else { return }
-            self.weatherTitle.text = "\(temp)"
             guard let icon = self.currentWeather?.iconName else { return }
+            self.weatherTitle.text = "\(temp)°"
             viewModel.showIconView(iconName: icon, iconView: self.iconView)
   
 
@@ -71,16 +70,18 @@ extension WeatherViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        //      let cell = Bundle.main.loadNibNamed("TableViewCell", owner: self, options: nil)?.first as! TableViewCell
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell else { return UITableViewCell() }
         
         guard let pre = self.presentList[indexPath.row].weather?.first?.main else { return UITableViewCell() }
+        guard let icon = self.presentList[indexPath.row].weather?.first?.icon else { return UITableViewCell()  }
+        guard let tempHighLabel = self.presentList[indexPath.row].main?.temp_min else { return UITableViewCell()  }
+        guard let tempLowLabel = self.presentList[indexPath.row].main?.temp_max else { return UITableViewCell()  }
+
         cell.dayLabel.text = "\(pre)"
-        
-        
-        print(pre)
-        
-        cell.backgroundColor = .lightGray
+        viewModel.showIconView(iconName: icon, iconView: cell.iconView)
+        cell.tempHighLabel.text = "\(tempHighLabel)°"
+        cell.tempLowLabel.text = "\(tempLowLabel)°"
+
         
         return cell
         
