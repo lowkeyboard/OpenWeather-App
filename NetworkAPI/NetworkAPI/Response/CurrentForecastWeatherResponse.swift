@@ -3,7 +3,7 @@ import Foundation
 // MARK: - DailyForecastWeatherResponse
 public struct CurrentForecastWeatherResponse: Codable {
     let coord: Coord?
-    let weather: [Weather]?
+  public let weather: [Weather]?
     let base: String?
   public let main: Main?
     let visibility: Int?
