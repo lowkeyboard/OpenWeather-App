@@ -110,8 +110,10 @@ extension HomeViewController: HomeViewModelDelegate {
         switch route {
         case .detail(let viewModel):
             let viewController = WeatherBuilder.make(with: viewModel, key: self.keyText.text ?? "")
-            viewController.modalPresentationStyle = .fullScreen
-            showDetailViewController(viewController, sender: nil)
+//            viewController.modalPresentationStyle = .fullScreen
+            
+            self.navigationController?.pushViewController(viewController, animated: false)
+//            showDetailViewController(viewController, sender: nil)
             // show(viewController, animated: false)
         }
     }
