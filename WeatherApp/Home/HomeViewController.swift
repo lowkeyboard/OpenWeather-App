@@ -14,11 +14,7 @@ final class HomeViewController: UIViewController {
     var viewModel = HomeViewModel(service: appContainer.service)
     private let notificationCenter = NotificationCenter.default
     private var observer: NSObjectProtocol?
-    @IBOutlet weak var keyText: UITextField! {
-        didSet {
-            keyText.text = KeyManager.shared.apiKey
-        }
-    }
+    @IBOutlet weak var keyText: UITextField!
     
     var alertView: UIAlertController {
         let alert = UIAlertController(title: "Locarion Service off", message: "", preferredStyle: .alert)
@@ -59,6 +55,18 @@ final class HomeViewController: UIViewController {
     
     @IBAction func loginButton(_ sender: Any) {
         guard let text = keyText.text else { return }
+        
+        guard let keyTF = keyText.text, !keyTF.isEmpty else {
+            print("empty input handling")
+            let alert = UIAlertController(title: "Cannot be left empty.", message: "Please enter your apikey.", preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                NSLog("The \"Request Failed\" alert occured.")
+            }))
+                self.present(alert, animated: true, completion: nil)
+            return
+        }
+
         viewModel.keyObtained(apiKey: text )
         print("button pressed")
     }
@@ -104,6 +112,13 @@ extension HomeViewController: HomeViewModelDelegate {
             viewController.modalPresentationStyle = .fullScreen
             showDetailViewController(viewController, sender: nil)
             // show(viewController, animated: false)
+        }
+    }
+    
+    func handleViewModelOutput(_ output: HomeViewModelOutput) {
+        switch output {
+        case .updateTitle(let title):
+            self.keyText.text = title
         }
     }
 }

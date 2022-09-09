@@ -33,6 +33,8 @@ final class WeatherViewController: UIViewController {
         
         self.tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         
+        
+        
     }
 }
 

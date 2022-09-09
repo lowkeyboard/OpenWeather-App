@@ -28,6 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let component = urlStr.components(separatedBy: "=") // 2
             if component.count > 1, let apiKey = component.last { // 3
                 print(apiKey)
+                KeyManager.shared.apiKey = apiKey
                 appContainer.router.startFromUrl(with: apiKey)
             }
         }

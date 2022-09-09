@@ -13,7 +13,6 @@ final class HomeBuilder {
         let viewController = storyboard.instantiateViewController(withIdentifier: "Home") as! HomeViewController
         
         viewController.viewModel = HomeViewModel(service: appContainer.service)
-        viewController.keyText?.text = apiKey
 
         return viewController
     }
