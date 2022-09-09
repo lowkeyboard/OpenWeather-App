@@ -44,6 +44,11 @@ final class HomeViewModel: HomeViewModelProtocol {
         delegate?.navigate(to: .detail(viewModel))
     }
     
+    func keyObtainedFromUrl() {
+        let viewModel = WeatherViewModel(service: appContainer.service)
+        delegate?.navigate(to: .detail(viewModel))
+    }
+    
 
     private func notify(_ output: HomeViewModelOutput) {
         delegate?.handleViewModelOutput(output)

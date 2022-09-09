@@ -57,7 +57,7 @@ final class HomeViewController: UIViewController {
     @IBAction func loginButton(_ sender: Any) {
 
         if (KeyManager.shared.isOpenedFromUrl) {
-            viewModel.keyObtained(apiKey: KeyManager.shared.apiKey )
+            viewModel.keyObtainedFromUrl()
         } else {
             guard let keyTF = keyText.text, !keyTF.isEmpty else {
                 print("empty input handling")
@@ -114,7 +114,7 @@ extension HomeViewController: HomeViewModelDelegate {
     func navigate(to route: HomeViewRoute) {
         switch route {
         case .detail(let viewModel):
-            let viewController = WeatherBuilder.make(with: viewModel, key: self.keyText.text ?? KeyManager.shared.apiKey)
+            let viewController = WeatherBuilder.make(with: viewModel, key: KeyManager.shared.apiKey)
 //            viewController.modalPresentationStyle = .fullScreen
             
             self.navigationController?.pushViewController(viewController, animated: false)
