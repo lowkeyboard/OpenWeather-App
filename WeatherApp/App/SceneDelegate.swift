@@ -28,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let component = urlStr.components(separatedBy: "=") // 2
             if component.count > 1, let apiKey = component.last { // 3
                 print(apiKey)
-                appContainer.router.start(with: apiKey)
+                appContainer.router.startFromUrl(with: apiKey)
             }
         }
     }

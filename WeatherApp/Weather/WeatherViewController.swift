@@ -16,6 +16,7 @@ final class WeatherViewController: UIViewController {
     private var currentWeather: CurrentWeatherPresentation?
     var presentDaily : [DailyWeatherRepresentation] = []
     var presentList: [List] = []
+    var key: String?
     
     @IBOutlet weak var weatherTitle: UILabel!
     @IBOutlet weak var locationTitle: UILabel!

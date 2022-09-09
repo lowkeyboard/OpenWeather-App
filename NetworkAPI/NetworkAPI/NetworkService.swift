@@ -13,13 +13,13 @@ public class NetworkService: ServiceProtocol {
     
     public init() {}
 
-    public func requestCurrentForecastWeather(lat: CLLocationDegrees, lon: CLLocationDegrees, success: @escaping (CurrentForecastWeatherResponse) -> Void, failure: @escaping (Error?) -> Void) {
+    public func requestCurrentForecastWeather(lat: CLLocationDegrees, lon: CLLocationDegrees, key: String, success: @escaping (CurrentForecastWeatherResponse) -> Void, failure: @escaping (Error?) -> Void) {
         
-        let url = "\(Service.baseUrl)/weather?lat=\(lat)&lon=\(lon)&appid=8ddadecc7ae4f56fee73b2b405a63659&units=metric"
+        let url = "\(Service.baseUrl)/weather?lat=\(lat)&lon=\(lon)&appid=\(key)&units=metric"
         let params: [String:String] = [
             "lat": "\"(lat)",
             "lon": "\(lon)",
-            "appid": Service.apiKey,
+            "appid": key,
             "units":"metric"]
         
             print("Sending request... \(url)")
@@ -34,16 +34,16 @@ public class NetworkService: ServiceProtocol {
         
     }
     
-    public func requestDailyForecastWeather(lat: CLLocationDegrees, lon: CLLocationDegrees, cnt: Int, success: @escaping (DailyForecastWeatherResponse) -> Void, failure: @escaping (Error?) -> Void) {
+    public func requestDailyForecastWeather(lat: CLLocationDegrees, lon: CLLocationDegrees, cnt: Int, key: String, success: @escaping (DailyForecastWeatherResponse) -> Void, failure: @escaping (Error?) -> Void) {
         
         //https://api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&cnt=7&appid=8ddadecc7ae4f56fee73b2b405a63659
         
 //        let url = "\(Service.baseUrl)forecast?lat=\(lat)&lon=\(lon)&con=\(cnt)&appid=\(Service.apiKey)"
-        let url = "https://api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&cnt=7&appid=8ddadecc7ae4f56fee73b2b405a63659"
+        let url = "https://api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&cnt=7&appid=\(key)"
         let params: [String:String] = [
             "lat": "\(lat)",
             "lon": "\(lon)",
-            "appid": Service.apiKey,
+            "appid": key,
           ]
         
             print("Sending request... \(url)")

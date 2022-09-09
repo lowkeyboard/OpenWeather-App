@@ -15,11 +15,23 @@ final class AppRouter {
         window = UIWindow(frame: UIScreen.main.bounds)
     }
     
-    func start(with apiKey: String) {
-        let viewController = HomeBuilder.make(with: apiKey)
+    func start() {
+        let apikey = KeyManager.shared.apiKey
+        let viewController = HomeBuilder.make(with: apikey)
         let navigationController = UINavigationController(rootViewController: viewController)
         
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
     }
+    
+    func startFromUrl(with apiKey: String) {
+        KeyManager.shared.apiKey = apiKey
+        let viewController = HomeBuilder.make(with: apiKey)
+        viewController.keyText.text = apiKey
+        let navigationController = UINavigationController(rootViewController: viewController)
+        
+        window.rootViewController = navigationController
+        window.makeKeyAndVisible()
+    }
+
 }

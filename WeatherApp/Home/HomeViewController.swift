@@ -14,7 +14,11 @@ final class HomeViewController: UIViewController {
     var viewModel = HomeViewModel(service: appContainer.service)
     private let notificationCenter = NotificationCenter.default
     private var observer: NSObjectProtocol?
-    @IBOutlet weak var keyText: UITextField!
+    @IBOutlet weak var keyText: UITextField! {
+        didSet {
+            keyText.text = KeyManager.shared.apiKey
+        }
+    }
     
     var alertView: UIAlertController {
         let alert = UIAlertController(title: "Locarion Service off", message: "", preferredStyle: .alert)
@@ -36,6 +40,8 @@ final class HomeViewController: UIViewController {
         return alert
     }
     
+    
+    
     override func viewDidLoad() {
         viewModel.delegate = self
         LocationManager.shared.checkLocationService()
@@ -52,7 +58,8 @@ final class HomeViewController: UIViewController {
     }
     
     @IBAction func loginButton(_ sender: Any) {
-        viewModel.keyObtained(apiKey: keyText.text ?? "8ddadecc7ae4f56fee73b2b405a63659")
+        guard let text = keyText.text else { return }
+        viewModel.keyObtained(apiKey: text )
         print("button pressed")
     }
     
@@ -93,7 +100,7 @@ extension HomeViewController: HomeViewModelDelegate {
     func navigate(to route: HomeViewRoute) {
         switch route {
         case .detail(let viewModel):
-            let viewController = WeatherBuilder.make(with: viewModel)
+            let viewController = WeatherBuilder.make(with: viewModel, key: self.keyText.text ?? "")
             viewController.modalPresentationStyle = .fullScreen
             showDetailViewController(viewController, sender: nil)
             // show(viewController, animated: false)

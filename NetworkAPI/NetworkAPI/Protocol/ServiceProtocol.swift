@@ -10,8 +10,8 @@ import CoreLocation
 
 public protocol ServiceProtocol {
 
-   func requestCurrentForecastWeather( lat: CLLocationDegrees, lon: CLLocationDegrees, success: @escaping (_ model: CurrentForecastWeatherResponse) -> Void, failure: @escaping (_ error: Error?) -> Void )
+   func requestCurrentForecastWeather( lat: CLLocationDegrees, lon: CLLocationDegrees, key: String, success: @escaping (_ model: CurrentForecastWeatherResponse) -> Void, failure: @escaping (_ error: Error?) -> Void )
     
-    func requestDailyForecastWeather( lat: CLLocationDegrees, lon: CLLocationDegrees, cnt: Int, success: @escaping (_ model: DailyForecastWeatherResponse) -> Void, failure: @escaping (_ error: Error?) -> Void )
+    func requestDailyForecastWeather( lat: CLLocationDegrees, lon: CLLocationDegrees, cnt: Int, key: String, success: @escaping (_ model: DailyForecastWeatherResponse) -> Void, failure: @escaping (_ error: Error?) -> Void )
 
 }
