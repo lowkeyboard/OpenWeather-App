@@ -14,6 +14,7 @@ protocol WeatherViewModelProtocol: AnyObject {
     func loadCurrentForecast()
     func loadDailyForecast()
     func showIconView(iconName: String, iconView: UIImageView)
+    func formatEpochToDay(epochTime: Double) -> String
 }
 
 enum WeatherViewModelOutput {

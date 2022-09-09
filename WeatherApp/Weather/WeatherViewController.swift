@@ -72,13 +72,14 @@ extension WeatherViewController: UITableViewDataSource, UITableViewDelegate {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell else { return UITableViewCell() }
         
-        guard let pre = self.presentList[indexPath.row].weather?.first?.main else { return UITableViewCell() }
+        guard let pre = self.presentList[indexPath.row].dt else { return UITableViewCell() }
         guard let icon = self.presentList[indexPath.row].weather?.first?.icon else { return UITableViewCell()  }
         guard let tempHighLabel = self.presentList[indexPath.row].main?.temp_min else { return UITableViewCell()  }
         guard let tempLowLabel = self.presentList[indexPath.row].main?.temp_max else { return UITableViewCell()  }
-
-        cell.dayLabel.text = "\(pre)"
+        
+        let preFormatted = viewModel.formatEpochToDay(epochTime: Double(pre))
         viewModel.showIconView(iconName: icon, iconView: cell.iconView)
+        cell.dayLabel.text = "\(preFormatted)"
         cell.tempHighLabel.text = "\(tempHighLabel)°"
         cell.tempLowLabel.text = "\(tempLowLabel)°"
 

@@ -10,7 +10,6 @@ import NetworkAPI
 import UIKit
 
 final class WeatherViewModel: WeatherViewModelProtocol {
-
     
     var delegate: WeatherViewModelDelegate?
     var key: String
@@ -25,6 +24,24 @@ final class WeatherViewModel: WeatherViewModelProtocol {
         self.service = service
         self.key = key
     }
+    
+    func formatEpochToDay(epochTime: Double) -> String {
+        let date = NSDate(timeIntervalSince1970: epochTime)
+        print(date)  //2022-09-09 12:55:22.790803+0300
+        
+        let dateFormatter = DateFormatter()
+//        dateFormatter.dateStyle = .short
+        dateFormatter.dateFormat = "dd MMMM"
+
+        var dateTimeString = "\(date)"
+        
+        dateTimeString = "\(dateTimeString.split(separator: " ").first ?? "nil")"
+        
+          return dateTimeString
+
+    }
+    
+
     
     func showIconView(iconName: String, iconView: UIImageView) {
         if let url = URL(string: "https://openweathermap.org/img/wn/\(iconName)@2x.png") {
