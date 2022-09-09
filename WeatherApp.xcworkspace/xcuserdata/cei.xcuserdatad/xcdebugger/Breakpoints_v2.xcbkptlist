@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "29503369-3A2B-4E96-8DFD-EBA1C4F5C5D2"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkAPI/NetworkAPI/NetworkService.swift"
@@ -18,6 +18,38 @@
             endingLineNumber = "27"
             landmarkName = "requestCurrentForecastWeather(lat:lon:key:success:failure:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "29503369-3A2B-4E96-8DFD-EBA1C4F5C5D2 - 2b4ba69dfa0e17b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetworkAPI.NetworkService.requestCurrentForecastWeather(lat: Swift.Double, lon: Swift.Double, key: Swift.String, success: (NetworkAPI.CurrentForecastWeatherResponse) -&gt; (), failure: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NetworkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cei/Desktop/WeatherApp/NetworkAPI/NetworkAPI/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "1712">
+               </Location>
+               <Location
+                  uuid = "29503369-3A2B-4E96-8DFD-EBA1C4F5C5D2 - 2b4ba69dfa0e17b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetworkAPI.NetworkService.requestCurrentForecastWeather(lat: Swift.Double, lon: Swift.Double, key: Swift.String, success: (NetworkAPI.CurrentForecastWeatherResponse) -&gt; (), failure: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NetworkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cei/Desktop/WeatherApp/NetworkAPI/NetworkAPI/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "2211">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -40,14 +72,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C2FF1027-C745-45E7-8FA9-18FA46FD7F23"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeatherApp/Home/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "loginButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -861,7 +893,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "80CF395F-32ED-40DC-BF3D-8554B925E6BA"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeatherApp/Weather/WeatherViewModel.swift"
@@ -941,7 +973,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "BEB7B50A-77ED-47ED-829F-37E51999E993"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NetworkAPI/NetworkAPI/NetworkService.swift"
@@ -951,13 +983,45 @@
             endingLineNumber = "52"
             landmarkName = "requestDailyForecastWeather(lat:lon:cnt:key:success:failure:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BEB7B50A-77ED-47ED-829F-37E51999E993 - 565185b2bd8a5d49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetworkAPI.NetworkService.requestDailyForecastWeather(lat: Swift.Double, lon: Swift.Double, cnt: Swift.Int, key: Swift.String, success: (NetworkAPI.DailyForecastWeatherResponse) -&gt; (), failure: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NetworkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cei/Desktop/WeatherApp/NetworkAPI/NetworkAPI/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "1508">
+               </Location>
+               <Location
+                  uuid = "BEB7B50A-77ED-47ED-829F-37E51999E993 - 565185b2bd8a5d49"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetworkAPI.NetworkService.requestDailyForecastWeather(lat: Swift.Double, lon: Swift.Double, cnt: Swift.Int, key: Swift.String, success: (NetworkAPI.DailyForecastWeatherResponse) -&gt; (), failure: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NetworkAPI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cei/Desktop/WeatherApp/NetworkAPI/NetworkAPI/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "1987">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0CBAE8C4-42F7-4E7E-8395-8190E6B3079C"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeatherApp/Weather/WeatherViewModel.swift"
@@ -973,7 +1037,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C1A623B1-ECFB-4E6E-8262-84EAC918B834"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeatherApp/Weather/WeatherViewModel.swift"

@@ -63,7 +63,7 @@ final class WeatherViewModel: WeatherViewModelProtocol {
         guard let lon = LocationManager.shared.lon else { return }
         let apiKey = KeyManager.shared.apiKey
 
-        notify(.updateLocationTitle("CityName"))
+        notify(.updateTitle(apiKey))
         
         
         service.requestCurrentForecastWeather(lat: lat, lon: lon, key: apiKey, success: { [weak self] model in

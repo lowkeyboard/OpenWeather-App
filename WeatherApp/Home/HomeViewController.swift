@@ -42,6 +42,7 @@ final class HomeViewController: UIViewController {
         viewModel.delegate = self
         LocationManager.shared.checkLocationService()
         observerNotification()
+        keyText.text = "8ddadecc7ae4f56fee73b2b405a63659"
         
         observer = notificationCenter.addObserver(forName: UIApplication.willEnterForegroundNotification, object: nil, queue: .main, using: { notification in
             print("willEnterForegroundNotification")
