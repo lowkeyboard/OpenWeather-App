@@ -14,6 +14,7 @@ final class WeatherBuilder {
         let viewController = storyboard.instantiateViewController(withIdentifier: "Weather") as! WeatherViewController
         
         viewController.viewModel = viewModel
+        KeyManager.shared.apiKey = key
         return viewController
     }
 }

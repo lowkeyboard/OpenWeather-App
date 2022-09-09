@@ -38,16 +38,20 @@ final class HomeViewController: UIViewController {
     
     
     
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         viewModel.delegate = self
         LocationManager.shared.checkLocationService()
         observerNotification()
-        keyText.text = "8ddadecc7ae4f56fee73b2b405a63659"
-        
+//        keyText.text = "8ddadecc7ae4f56fee73b2b405a63659"
         observer = notificationCenter.addObserver(forName: UIApplication.willEnterForegroundNotification, object: nil, queue: .main, using: { notification in
             print("willEnterForegroundNotification")
         })
         self.hideKeyboardWhenTappedAround()
+        self.keyText.placeholder =  "API KEY"
+        self.loginButton.tintColor = .lightGray
+        self.loginButton.titleLabel?.text = "Enter"
     }
     
     
@@ -56,20 +60,25 @@ final class HomeViewController: UIViewController {
     }
     
     @IBAction func loginButton(_ sender: Any) {
-        guard let text = keyText.text else { return }
-        
-        guard let keyTF = keyText.text, !keyTF.isEmpty else {
-            print("empty input handling")
-            let alert = UIAlertController(title: "Cannot be left empty.", message: "Please enter your apikey.", preferredStyle: .alert)
 
-            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-                NSLog("The \"Request Failed\" alert occured.")
-            }))
-                self.present(alert, animated: true, completion: nil)
-            return
+        if (KeyManager.shared.isOpenedFromUrl) {
+            viewModel.keyObtainedFromUrl()
+        } else {
+            guard let keyTF = keyText.text, !keyTF.isEmpty else {
+                print("empty input handling")
+                let alert = UIAlertController(title: "Cannot be left empty.", message: "Please enter your apikey.", preferredStyle: .alert)
+
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"Request Failed\" alert occured.")
+                }))
+                    self.present(alert, animated: true, completion: nil)
+                return
+            }
+
+            viewModel.keyObtained(apiKey: keyTF)
+
         }
 
-        viewModel.keyObtained(apiKey: text )
         print("button pressed")
     }
     
@@ -110,7 +119,7 @@ extension HomeViewController: HomeViewModelDelegate {
     func navigate(to route: HomeViewRoute) {
         switch route {
         case .detail(let viewModel):
-            let viewController = WeatherBuilder.make(with: viewModel, key: self.keyText.text ?? "")
+            let viewController = WeatherBuilder.make(with: viewModel, key: KeyManager.shared.apiKey)
 //            viewController.modalPresentationStyle = .fullScreen
             
             self.navigationController?.pushViewController(viewController, animated: false)

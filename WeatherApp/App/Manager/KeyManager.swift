@@ -10,4 +10,5 @@ import Foundation
 class KeyManager {
     static let shared = KeyManager()
     var apiKey: String = ""
+    var isOpenedFromUrl: Bool = false
 }

@@ -16,20 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyd-EJ-uil">
-                                <rect key="frame" x="20" y="276" width="374" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="XFt-ms-Bwi"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <action selector="loginButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2wz-SB-KYw"/>
-                                    <action selector="loginButton:" destination="NlH-ds-CZB" eventType="touchUpInside" id="ZLo-Hu-mDS"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mDT-Zz-jbI">
-                                <rect key="frame" x="20" y="188" width="374" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mDT-Zz-jbI">
+                                <rect key="frame" x="66" y="188" width="290" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="hUh-6J-hjr"/>
                                 </constraints>
@@ -40,6 +28,19 @@
                                     <action selector="keyTextField:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="wbe-oh-Ukj"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyd-EJ-uil">
+                                <rect key="frame" x="66" y="305" width="290" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="XFt-ms-Bwi"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Enter"/>
+                                <connections>
+                                    <action selector="loginButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2wz-SB-KYw"/>
+                                    <action selector="loginButton:" destination="NlH-ds-CZB" eventType="touchUpInside" id="ZLo-Hu-mDS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -55,6 +56,7 @@
                     <navigationItem key="navigationItem" id="qxC-TN-rio"/>
                     <connections>
                         <outlet property="keyText" destination="mDT-Zz-jbI" id="Wxg-tp-Z5j"/>
+                        <outlet property="loginButton" destination="nyd-EJ-uil" id="dga-LF-3oc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
