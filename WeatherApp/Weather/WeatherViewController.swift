@@ -31,7 +31,7 @@ final class WeatherViewController: UIViewController {
         tableView.delegate = self
         
         self.tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
-        
+
     }
 }
 

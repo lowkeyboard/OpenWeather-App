@@ -35,7 +35,8 @@ extension HomeViewController: HomeViewModelDelegate {
         case .detail(let viewModel):
             let viewController = WeatherBuilder.make(with: viewModel)
             viewController.modalPresentationStyle = .fullScreen
-            present(viewController, animated: false)
+            showDetailViewController(viewController, sender: nil)
+           // show(viewController, animated: false)
         }
     }
 }
