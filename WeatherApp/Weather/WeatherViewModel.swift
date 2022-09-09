@@ -61,7 +61,12 @@ final class WeatherViewModel: WeatherViewModelProtocol {
         notify(.updateTitle("Weathers"))
         notify(.setLoading(true))
         
-        service.requestCurrentForecastWeather(lat: 10, lon: 20, success: { [weak self] model in
+        guard let lat = LocationManager.shared.lat else { return }
+        guard let lon = LocationManager.shared.lon else { return }
+
+        
+        
+        service.requestCurrentForecastWeather(lat: lat, lon: lon, success: { [weak self] model in
             guard let self = self else { return }
             self.notify(.setLoading(false))
             
@@ -77,9 +82,12 @@ final class WeatherViewModel: WeatherViewModelProtocol {
     func loadDailyForecast() {
         notify(.updateTitle("Daily Weather"))
         notify(.setLoading(true))
+        guard let lat = LocationManager.shared.lat else { return }
+        guard let lon = LocationManager.shared.lon else { return }
+
         DispatchQueue.global(qos: .background).async {
             
-            self.service.requestDailyForecastWeather(lat: 44.34, lon: 10.99, cnt: 7, success: { [weak self] model in
+            self.service.requestDailyForecastWeather(lat: lat, lon: lon, cnt: 7, success: { [weak self] model in
                 guard let self = self else { return }
                 self.notify(.setLoading(false))
                 guard let responseList = model.list else { return }
