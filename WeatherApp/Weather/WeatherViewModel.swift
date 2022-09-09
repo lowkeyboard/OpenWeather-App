@@ -12,7 +12,6 @@ import UIKit
 final class WeatherViewModel: WeatherViewModelProtocol {
     
     var delegate: WeatherViewModelDelegate?
-    var key: String
     private var currentResult: CurrentForecastWeatherResponse?
     private var presentationCurrent: CurrentWeatherPresentation?
     private let service: ServiceProtocol
@@ -20,9 +19,8 @@ final class WeatherViewModel: WeatherViewModelProtocol {
     private var present =  DailyWeatherRepresentation(cnt: 0, dateTime: "", temperature: nil, iconName: "")
     private var dailyArray : [DailyWeatherRepresentation] = []
     
-    init(service: ServiceProtocol, key: String) {
+    init(service: ServiceProtocol) {
         self.service = service
-        self.key = key
     }
     
     func formatEpochToDay(epochTime: Double) -> String {
@@ -61,7 +59,14 @@ final class WeatherViewModel: WeatherViewModelProtocol {
         notify(.updateTitle("Weathers"))
         notify(.setLoading(true))
         
-        service.requestCurrentForecastWeather(lat: 10, lon: 20, success: { [weak self] model in
+        guard let lat = LocationManager.shared.lat else { return }
+        guard let lon = LocationManager.shared.lon else { return }
+        let apiKey = KeyManager.shared.apiKey
+
+        notify(.updateTitle(apiKey))
+        
+        
+        service.requestCurrentForecastWeather(lat: lat, lon: lon, key: apiKey, success: { [weak self] model in
             guard let self = self else { return }
             self.notify(.setLoading(false))
             
@@ -77,14 +82,20 @@ final class WeatherViewModel: WeatherViewModelProtocol {
     func loadDailyForecast() {
         notify(.updateTitle("Daily Weather"))
         notify(.setLoading(true))
+        guard let lat = LocationManager.shared.lat else { return }
+        guard let lon = LocationManager.shared.lon else { return }
+        let apiKey = KeyManager.shared.apiKey
+
         DispatchQueue.global(qos: .background).async {
             
-            self.service.requestDailyForecastWeather(lat: 44.34, lon: 10.99, cnt: 7, success: { [weak self] model in
+            self.service.requestDailyForecastWeather(lat: lat, lon: lon, cnt: 7, key: apiKey, success: { [weak self] model in
                 guard let self = self else { return }
                 self.notify(.setLoading(false))
                 guard let responseList = model.list else { return }
+                guard let locationTitle = LocationManager.shared.locationTitle else { return }
     
                 self.notify(.showDaily(responseList))
+                self.notify(.updateLocationTitle(locationTitle))
                 
                 
             }, failure: { error in

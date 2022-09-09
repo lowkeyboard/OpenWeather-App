@@ -17,9 +17,16 @@ protocol HomeViewModelProtocol: AnyObject {
     func keyObtained(apiKey: String)
 }
 
+enum HomeViewModelOutput {
+    case updateTitle(String)
+}
+
 protocol HomeViewModelDelegate: AnyObject  {
     func navigate(to route: HomeViewRoute)
+    func handleViewModelOutput(_ output: HomeViewModelOutput)
 }
+
+
 
 final class HomeViewModel: HomeViewModelProtocol {
     
@@ -32,8 +39,16 @@ final class HomeViewModel: HomeViewModelProtocol {
     
     
     func keyObtained(apiKey: String) {
-        let viewModel = WeatherViewModel(service: app.service, key: apiKey)
+        KeyManager.shared.apiKey = apiKey
+        let viewModel = WeatherViewModel(service: appContainer.service)
         delegate?.navigate(to: .detail(viewModel))
     }
+    
+
+    private func notify(_ output: HomeViewModelOutput) {
+        delegate?.handleViewModelOutput(output)
+    }
+
+    
 
 }

@@ -9,7 +9,7 @@ import UIKit
 
 final class WeatherBuilder {
     
-    static func make(with viewModel: WeatherViewModelProtocol) -> WeatherViewController {
+    static func make(with viewModel: WeatherViewModelProtocol, key: String) -> WeatherViewController {
         let storyboard = UIStoryboard(name: "Weather", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "Weather") as! WeatherViewController
         

@@ -7,7 +7,7 @@
 
 import NetworkAPI
 
-let app = AppContainer()
+let appContainer = AppContainer()
 
 final class AppContainer {
     

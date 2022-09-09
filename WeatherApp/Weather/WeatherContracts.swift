@@ -19,6 +19,7 @@ protocol WeatherViewModelProtocol: AnyObject {
 
 enum WeatherViewModelOutput {
     case updateTitle(String)
+    case updateLocationTitle(String)
     case setLoading(Bool)
     case showCurrent(CurrentWeatherPresentation)
     case showDaily([List])
