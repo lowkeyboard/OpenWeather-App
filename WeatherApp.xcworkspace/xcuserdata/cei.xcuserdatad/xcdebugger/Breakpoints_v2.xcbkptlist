@@ -1053,7 +1053,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "40A4D2AF-DE1C-4F83-B2A0-3C3EBA12E255"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeatherApp/App/Manager/LocationManager.swift"
@@ -1085,7 +1085,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "8C3FB988-AAF9-4B14-8E2E-A0EE08CFEBDB"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeatherApp/Weather/WeatherViewController.swift"

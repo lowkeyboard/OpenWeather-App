@@ -23,26 +23,26 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gao-yE-aJd">
-                        <rect key="frame" x="294" y="9" width="42" height="37"/>
+                        <rect key="frame" x="293" y="9" width="42" height="37"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xd3-wH-4c6">
-                        <rect key="frame" x="385" y="9" width="42" height="37"/>
+                        <rect key="frame" x="384" y="9" width="42" height="37"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idU-Rq-GWB">
-                        <rect key="frame" x="1" y="9" width="29.5" height="37"/>
+                        <rect key="frame" x="8" y="9" width="29.5" height="37"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="xd3-wH-4c6" secondAttribute="trailing" constant="4" id="BeO-HB-5EH"/>
+                    <constraint firstAttribute="trailing" secondItem="xd3-wH-4c6" secondAttribute="trailing" constant="5" id="BeO-HB-5EH"/>
                     <constraint firstAttribute="bottom" secondItem="xd3-wH-4c6" secondAttribute="bottom" constant="10" id="Fhp-kP-LCS"/>
                     <constraint firstItem="gao-yE-aJd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="Fnv-Zf-u7X"/>
                     <constraint firstItem="4T8-5y-qj2" firstAttribute="leading" secondItem="idU-Rq-GWB" secondAttribute="trailing" constant="30" id="GT5-OD-p4N"/>
@@ -55,7 +55,7 @@
                     <constraint firstItem="4T8-5y-qj2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="krq-wg-8DL"/>
                     <constraint firstAttribute="bottom" secondItem="gao-yE-aJd" secondAttribute="bottom" constant="10" id="ti9-eY-QcQ"/>
                     <constraint firstItem="idU-Rq-GWB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="ui5-dK-vKg"/>
-                    <constraint firstItem="idU-Rq-GWB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="1" id="v7y-4j-bJv"/>
+                    <constraint firstItem="idU-Rq-GWB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="v7y-4j-bJv"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
