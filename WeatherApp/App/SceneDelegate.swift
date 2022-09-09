@@ -19,6 +19,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
 
     }
+    
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        if let url = URLContexts.first?.url {
+            print(url)
+            let urlStr = url.absoluteString //1
+            // Parse the custom URL as per your requirement.
+            let component = urlStr.components(separatedBy: "=") // 2
+            if component.count > 1, let apiKey = component.last { // 3
+                print(apiKey)
+                appContainer.router.start(with: apiKey)
+            }
+        }
+    }
+
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

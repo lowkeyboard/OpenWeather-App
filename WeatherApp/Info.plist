@@ -3,9 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Location is required to fetch forecast information.</string>
+	<string>Location required</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Location is required to fetch forecast information.</string>
+	<string>Location required</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string></string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>caglaweather</string>
+			</array>
+		</dict>
+		<dict/>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

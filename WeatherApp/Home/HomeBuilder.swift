@@ -8,11 +8,12 @@
 import UIKit
 
 final class HomeBuilder {
-    static func make() -> HomeViewController {
+    static func make(with apiKey: String) -> HomeViewController {
         let storyboard = UIStoryboard(name: "Home", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "Home") as! HomeViewController
         
-        viewController.viewModel = HomeViewModel(service: app.service)
+        viewController.viewModel = HomeViewModel(service: appContainer.service)
+        viewController.keyText?.text = apiKey
 
         return viewController
     }

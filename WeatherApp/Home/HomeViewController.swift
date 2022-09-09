@@ -11,7 +11,7 @@ import CoreLocation
 
 final class HomeViewController: UIViewController {
     
-    var viewModel = HomeViewModel(service: app.service)
+    var viewModel = HomeViewModel(service: appContainer.service)
     private let notificationCenter = NotificationCenter.default
     private var observer: NSObjectProtocol?
     @IBOutlet weak var keyText: UITextField!
@@ -38,15 +38,11 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         viewModel.delegate = self
-        keyText.text = "8ddadecc7ae4f56fee73b2b405a63659"
-        
         LocationManager.shared.checkLocationService()
         observerNotification()
         
         observer = notificationCenter.addObserver(forName: UIApplication.willEnterForegroundNotification, object: nil, queue: .main, using: { notification in
             print("willEnterForegroundNotification")
-            
-            
         })
     }
     

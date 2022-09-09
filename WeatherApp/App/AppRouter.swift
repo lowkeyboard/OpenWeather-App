@@ -15,8 +15,8 @@ final class AppRouter {
         window = UIWindow(frame: UIScreen.main.bounds)
     }
     
-    func start() {
-        let viewController = HomeBuilder.make()
+    func start(with apiKey: String) {
+        let viewController = HomeBuilder.make(with: apiKey)
         let navigationController = UINavigationController(rootViewController: viewController)
         
         window.rootViewController = navigationController

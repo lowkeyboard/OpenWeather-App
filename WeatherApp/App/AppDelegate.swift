@@ -12,10 +12,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        app.router.start()
-
+        appContainer.router.start(with: "0")
+        
         return true
     }
+    
 
     // MARK: UISceneSession Lifecycle
 
