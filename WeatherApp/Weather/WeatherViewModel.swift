@@ -84,7 +84,7 @@ final class WeatherViewModel: WeatherViewModelProtocol {
         notify(.setLoading(true))
         guard let lat = LocationManager.shared.lat else { return }
         guard let lon = LocationManager.shared.lon else { return }
-        let apiKey = KeyManager.shared.apiKey
+        var apiKey = KeyManager.shared.apiKey
 
         DispatchQueue.global(qos: .background).async {
             

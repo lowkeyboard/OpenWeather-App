@@ -26,8 +26,8 @@ final class AppRouter {
     
     func startFromUrl(with apiKey: String) {
         KeyManager.shared.apiKey = apiKey
-        let viewModel = WeatherViewModel(service: appContainer.service)
-        let viewController = WeatherBuilder.make(with: viewModel, key: apiKey)
+        KeyManager.shared.isOpenedFromUrl = true
+        let viewController = HomeBuilder.make(with: apiKey)
         let navigationController = UINavigationController(rootViewController: viewController)
         
         window.rootViewController = navigationController
