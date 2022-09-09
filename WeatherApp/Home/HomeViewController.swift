@@ -47,6 +47,7 @@ final class HomeViewController: UIViewController {
         observer = notificationCenter.addObserver(forName: UIApplication.willEnterForegroundNotification, object: nil, queue: .main, using: { notification in
             print("willEnterForegroundNotification")
         })
+        self.hideKeyboardWhenTappedAround()
     }
     
     
