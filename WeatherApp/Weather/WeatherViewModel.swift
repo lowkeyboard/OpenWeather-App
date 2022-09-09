@@ -10,6 +10,22 @@ import NetworkAPI
 import UIKit
 
 final class WeatherViewModel: WeatherViewModelProtocol {
+
+    
+    var delegate: WeatherViewModelDelegate?
+    var key: String
+    private var currentResult: CurrentForecastWeatherResponse?
+    private var presentationCurrent: CurrentWeatherPresentation?
+    private let service: ServiceProtocol
+    private var dailyList: [List] = []
+    private var present =  DailyWeatherRepresentation(cnt: 0, dateTime: "", temperature: nil, iconName: "")
+    private var dailyArray : [DailyWeatherRepresentation] = []
+    
+    init(service: ServiceProtocol, key: String) {
+        self.service = service
+        self.key = key
+    }
+    
     func showIconView(iconName: String, iconView: UIImageView) {
         if let url = URL(string: "https://openweathermap.org/img/wn/\(iconName)@2x.png") {
             let task = URLSession.shared.dataTask(with: url) { data, response, error in
@@ -22,19 +38,6 @@ final class WeatherViewModel: WeatherViewModelProtocol {
             
             task.resume()
         }
-    }
-    
-    var delegate: WeatherViewModelDelegate?
-    var key: String
-    private var currentResult: CurrentForecastWeatherResponse?
-    private var presentationCurrent: CurrentWeatherPresentation?
-    private let service: ServiceProtocol
-    private var dailyList: [List] = []
-    private var present =  DailyWeatherRepresentation(cnt: 0, dateTime: "", temperature: nil, iconName: "")
-
-    init(service: ServiceProtocol, key: String) {
-        self.service = service
-        self.key = key
     }
     
     func loadCurrentForecast() {
@@ -62,17 +65,20 @@ final class WeatherViewModel: WeatherViewModelProtocol {
             self.service.requestDailyForecastWeather(lat: 44.34, lon: 10.99, cnt: 7, success: { [weak self] model in
                 guard let self = self else { return }
                 self.notify(.setLoading(false))
-                guard let response = model.list else { return }
+                guard let responseList = model.list else { return }
+                        
                 
-                self.dailyList = response
-                _ = self.dailyList.map { element in
-                    self.present.cnt = self.dailyList.count
-                    self.present.dateTime = "\(element.dt)"
-                    self.present.temperature = element.temp?.day
-                    self.present.iconName = element.weather?.first?.icon ?? "04n"
-                }
+//                self.dailyList = response
+//                _ = self.dailyList.map { element in
+//                    self.present.cnt = self.dailyList.count
+//                    self.present.dateTime = "\(String(describing: element.dt))"
+//                    self.present.temperature = element.temp?.day
+//                    self.present.iconName = element.weather?.first?.icon ?? "04n"
+//                }
                 
-                self.notify(.showDaily(self.present))
+                
+                
+                self.notify(.showDaily(responseList))
                 
                 
             }, failure: { error in

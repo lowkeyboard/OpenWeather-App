@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import NetworkAPI
 
 final class WeatherViewController: UIViewController {
     
@@ -14,6 +15,7 @@ final class WeatherViewController: UIViewController {
     var viewModel: WeatherViewModelProtocol!
     private var currentWeather: CurrentWeatherPresentation?
     var presentDaily : [DailyWeatherRepresentation] = []
+    var presentList: [List] = []
     
     @IBOutlet weak var weatherTitle: UILabel!
     @IBOutlet weak var locationTitle: UILabel!
@@ -42,7 +44,9 @@ extension WeatherViewController: WeatherViewModelDelegate {
             UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
         case .showCurrent(let currentWeather):
             self.currentWeather = currentWeather
-            self.weatherTitle.text = "\(self.currentWeather?.temperature)"
+            
+            guard let temp = self.currentWeather?.temperature else { return }
+            self.weatherTitle.text = "\(temp)"
             guard let icon = self.currentWeather?.iconName else { return }
             viewModel.showIconView(iconName: icon, iconView: self.iconView)
   
@@ -50,7 +54,7 @@ extension WeatherViewController: WeatherViewModelDelegate {
             
         case .showDaily(let present):
             print("showDaily...")
-            self.presentDaily.append(present)
+            self.presentList = present
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -62,14 +66,14 @@ extension WeatherViewController: WeatherViewModelDelegate {
 extension WeatherViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presentDaily.count
+        return presentList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         //      let cell = Bundle.main.loadNibNamed("TableViewCell", owner: self, options: nil)?.first as! TableViewCell
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableViewCell else { return UITableViewCell() }
-        let pre = self.presentDaily[indexPath.row].temperature
+        let pre = self.presentList[indexPath.row].weather?.first?.main
         cell.dayLabel.text = "\(String(describing: pre))"
         
         print(cell.dayLabel.text)
