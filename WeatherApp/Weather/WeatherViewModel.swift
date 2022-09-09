@@ -92,8 +92,10 @@ final class WeatherViewModel: WeatherViewModelProtocol {
                 guard let self = self else { return }
                 self.notify(.setLoading(false))
                 guard let responseList = model.list else { return }
+                guard let locationTitle = LocationManager.shared.locationTitle else { return }
     
                 self.notify(.showDaily(responseList))
+                self.notify(.updateLocationTitle(locationTitle))
                 
                 
             }, failure: { error in

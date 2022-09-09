@@ -19,6 +19,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     private let notificationCenter = NotificationCenter.default
     var lat: Double?
     var lon: Double?
+    var locationTitle: String?
     
     private override init() { }
     
@@ -81,6 +82,26 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
                 self.setupNotificationCenter(object: object)
                 self.lon =  location.coordinate.longitude
                 self.lat =  location.coordinate.latitude
+            
+                
+                
+                self.getPlace(for: location) { placemark in
+                    guard let placemark = placemark else { return }
+                    
+                    var output = ""
+                    if let country = placemark.country {
+                        output = output + "\(country) "
+                    }
+                    if let state = placemark.administrativeArea {
+                        output = output + "\(state) "
+                    }
+                    if let town = placemark.locality {
+                        output = output + "\(town) "
+                    }
+                    
+                    self.locationTitle = output
+                
+                }
 
             }
             
@@ -102,5 +123,32 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         notificationCenter.post(name: .sharedLocation, object: object)
     }
     
+}
+
+// MARK: - Get Placemark
+extension LocationManager {
+    
+    
+    func getPlace(for location: CLLocation,
+                  completion: @escaping (CLPlacemark?) -> Void) {
+        
+        let geocoder = CLGeocoder()
+        geocoder.reverseGeocodeLocation(location) { placemarks, error in
+            
+            guard error == nil else {
+                print("*** Error in \(#function): \(error!.localizedDescription)")
+                completion(nil)
+                return
+            }
+            
+            guard let placemark = placemarks?[0] else {
+                print("*** Error in \(#function): placemark is nil")
+                completion(nil)
+                return
+            }
+            
+            completion(placemark)
+        }
+    }
 }
 

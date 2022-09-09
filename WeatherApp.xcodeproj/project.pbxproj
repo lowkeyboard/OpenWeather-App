@@ -106,13 +106,12 @@
 		A26AADD728C8B89000FCFC59 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A2F3AD0028CBA9940040D35B /* Manager */,
 				A2F3ACFD28CBA68E0040D35B /* Extension */,
 				A284585828C884FA00222185 /* AppDelegate.swift */,
 				A284585A28C884FA00222185 /* SceneDelegate.swift */,
 				A29AD3A828C9BF24004BEB5A /* AppRouter.swift */,
 				A29AD3AA28C9C0A5004BEB5A /* AppContainer.swift */,
-				A2F3ACF728CB5F4B0040D35B /* LocationManager.swift */,
-				A2F3ACFB28CB83A40040D35B /* KeyManager.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -190,6 +189,15 @@
 				A2F3ACFE28CBA6A40040D35B /* UIView+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		A2F3AD0028CBA9940040D35B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A2F3ACFB28CB83A40040D35B /* KeyManager.swift */,
+				A2F3ACF728CB5F4B0040D35B /* LocationManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		ECBBB5D2E4916E6EBFDBF814 /* Pods */ = {
